@@ -3,48 +3,49 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+
 const StudentStories = () => {
   const stories = [{
+    slug: "alex"
     name: "Alex, 175",
     description: "For students pursuing the KJD path who are dedicated to the long-haul journey of making their LSAT dreams come true:",
     quote: "No matter where you are in life, if you tell Ellen what your goals are, even if you don't believe in yourself and you don't think you can achieve those goals, Ellen will believe in you.",
-    buttonText: "Read Alex's Story",
     image: "photo-1486312338219-ce68d2c6f44d"
   }, {
+    slug: "celeste"
     name: "Celeste, 174",
     description: "For English language learners from outside of North America, especially those who are daunted by the language barrier:",
     quote: "I'm a non-native English speaker who believed the LSAT was undefeatable for someone like me. I came to Elemental worried my goal score of 165 was too much to ask, but I finished with a 174, a completely changed mindset, and gratitude for the warm, welcoming, and inclusive Elemental Prep community.",
-    buttonText: "Read Celeste's Story",
     image: "photo-1649972904349-6e44c42644a7"
   }, {
+    slug: "ed"
     name: "Ed, 168",
     description: "For procrastinators and self-doubters who are ready to realize their LSAT dreams:",
     quote: "Before I began studying for the LSAT things came very easily to me, and I thought the test would be similar. I could not have been more wrong. With the help of Ellen, Team Elemental, and my own dedication, I achieved the score of my dreams, something I never thought possible.",
-    buttonText: "Read Ed's Story",
     image: "photo-1581092795360-fd1ca04f0952"
   }, {
+    slug: "julia"
     name: "Julia, 172",
     description: "For those who lack the self confidence to turn their dreams into reality:",
     quote: "My main issue throughout my LSAT journey was…me. I would constantly get in my own way and delay my progress because I simply lacked self confidence. Elemental Prep changed everything. If you are ready to dedicate yourself to this test and put your trust in the Elemental process, then you can and will succeed. If I can go from the 15th percentile to the 98th, then you can get the score you want.",
-    buttonText: "Read Julia's Story",
     image: "photo-1649972904349-6e44c42644a7"
   }, {
+    slug: "sara"
     name: "Sara, 179",
     description: "For all the skimmers out there who think surely they don't have to actually do Translation Drills:",
     quote: "As I painted fences for my Mr. Miyagi, I started to build up a real nose for different answer choices. I felt like I could sniff out a necessary assumption answer from a sufficient, blindfolded. It was a weird time. It was a glorious time. I started to reach a point where, through Party Tricking alone, I could correctly answer 20 out of 25 questions on my first pass, and all on my second. Never once reading the stimulus. Applied to Reading Comprehension questions, the same progress occurred, never once reading the passage.",
-    buttonText: "Read Sara's Story",
     image: "photo-1519389950473-47ba0277781c"
   }, {
+    slug: "stephen"
     name: "Stephen, 168",
     description: "For the non-traditional law school applicants who graduated college many years ago and are looking for a well-organized and structured path to mastering the LSAT:",
     quote: "Ellen is not only one of the best instructors I've ever had, but she is also an amazing mentor who will help you shatter your own self-doubt and exceed whatever goal you've set for yourself.",
-    buttonText: "Read Stephen's Story",
     image: "photo-1486312338219-ce68d2c6f44d"
   }, {
+    slug: "stewart"
     name: "Stewart, 168",
     description: "For those who have tried absolutely everything and are on the brink of giving up:",
     quote: "My diagnostic score was a 142. Over three years and four different test prep companies later I could only achieve a practice test score ranging from 148-153. Elemental Prep helped me achieve my dream score after I effectively gave up hope, and I am certain that anyone who comes here with an open and positive attitude, dedication, and willingness to persevere and improve will go far.",
-    buttonText: "Read Stewart's Story",
     image: "photo-1581092795360-fd1ca04f0952"
   }];
   return <div className="min-h-screen">
@@ -115,4 +116,45 @@ const StudentStories = () => {
       </div>
     </div>;
 };
-export default StudentStories;
+
+export default function StudentStories() {
+  return (
+    <>
+      <Navigation />
+
+      <main className="mx-auto max-w-5xl px-4 py-16">
+        <h1 className="text-center text-4xl font-extrabold mb-12">
+          Student Stories
+        </h1>
+
+        <section className="space-y-10">
+          {stories.map((s) => (
+            <Card key={s.slug} className="shadow-lg">
+              <CardContent className="p-6 lg:flex lg:items-center">
+                <img
+                  src={`/public/images/${s.image}.jpg`}
+                  alt={s.name}
+                  className="w-32 h-32 object-cover rounded mb-4 lg:mb-0 lg:mr-6"
+                />
+
+                <div className="flex-1">
+                  <h2 className="text-2xl font-bold mb-2">{s.name}</h2>
+                  <p className="mb-4">{s.description}</p>
+
+                  <Link
+                    to={`/stories/${s.slug}`}
+                    className="inline-block rounded-full bg-pink-500 px-6 py-2 text-white hover:bg-pink-600"
+                  >
+                    Read {s.slug.charAt(0).toUpperCase() + s.slug.slice(1)}’s Story
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </section>
+      </main>
+
+      <Footer />
+    </>
+  );
+}
