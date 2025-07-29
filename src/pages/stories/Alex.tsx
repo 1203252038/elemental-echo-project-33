@@ -63,12 +63,36 @@ export default function AlexStory() {
                 </p>
 
                 <p>
-                  I reached out to Ellen because I had an inkling I wanted to
-                  attend law school straight after graduation. This path is
-                  coined “KJD” which is a fancy way to say Kindergarten&nbsp;–
-                  Juris Doctor. I didn’t know this at the time, but most people
-                  don’t take this path…
+                  I reached out to Ellen because I had an inkling I wanted to 
+                  attend law school straight after graduation. This path is 
+                  coined “KJD” which is a fancy way to say Kindergarten – Juris Doctor. 
+                  I didn’t know this at the time, but most people don’t take this path. 
+                  Instead of discouraging me from my goal, Ellen did exactly what I needed: 
+                  she gave it to me straight and told me that I would have to score extremely
+                  high on the LSAT and keep my undergrad GPA up. She also recommended I gain 
+                  as much legal experience as possible during undergrad so I could be certain
+                  of my choice to apply straight through by the time my senior year of college
+                  came around. 
                 </p>
+
+                <p>
+                  Later that week, I took my first LSAT and scored a 152. Ellen 
+                  was throwing around numbers 170+ and saying things like “zeroing” logic games; 
+                  meanwhile, I was staring at eleven red circles per section. At this point, 
+                  I was overwhelmed with imposter syndrome. I was fearful that Ellen would be 
+                  disappointed and tell me my goal was out of sight because I truly believed it 
+                  would be impossible.
+                </p>
+
+                <p>
+                  When I hopped on our second meeting, I braced myself for what I assumed 
+                  Ellen would say about needing to lower my expectations. However, my 
+                  diagnostic score never came up. Looking back, this makes perfect sense. 
+                  No matter where you are in life, if you tell Ellen what your goals are, 
+                  even if you don’t believe in yourself and you don’t think you can achieve 
+                  those goals, Ellen will believe in you.
+                </p>
+                
               </section>
 
               {/* — Add more <section> blocks for each chapter — */}
