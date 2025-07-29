@@ -11,7 +11,7 @@ export default function AlexStory() {
       <section className="bg-[#77b8b1] text-white py-20 pt-36 relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-neutra font-bold text-7xl">
-            Alex’s LSAT Journey
+            Alex, 175
           </h1>
         </div>
       </section>
@@ -25,9 +25,12 @@ export default function AlexStory() {
             <section className="py-16 px-8 lg:px-16">
               <div className="mx-auto max-w-3xl space-y-6 font-neutra text-[18px] leading-relaxed text-gray-700">
                 <p>
-                  When Alex started with Elemental Prep he was scoring a 158 on
-                  timed practice tests. Two months later he walked into the real
-                  LSAT and scored a&nbsp;<strong>175</strong>.
+                  Present Day:
+                  Moments ago, I logged off my last Zoom session with Ellen. 
+                  We spent the last hour reflecting back on our three years working together and 
+                  after I clicked “leave meeting” I noticed I began to tear up. 
+                  To me, Ellen is so much more than an LSAT tutor and mentor; 
+                  Ellen truly is one of my closest friends.
                 </p>
 
                 <p>
