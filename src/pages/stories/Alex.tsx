@@ -221,7 +221,7 @@ export default function AlexStory() {
               {/* ——— THANK YOU ——— */}
               <section>
                 <h2 className="mb-4 text-2xl font-extrabold text-gray-800">
-                  Thank You:
+                  Thank You
                 </h2>
               
                 <p className="mb-4">
@@ -233,9 +233,11 @@ export default function AlexStory() {
 
               {/* BACK LINK */}
               <div className="pt-8 text-center">
-                <Link to="/student-stories" className="text-sky-600 underline hover:text-sky-800">
-                  ← Back to Student Stories
-                </Link>
+               <Link to={`/stories/${story.slug}`}>
+                              <Button className="bg-[#F48487] hover:bg-[#f37579] text-white font-neutra font-bold py-2 px-6 rounded-full">
+                                back
+                              </Button>
+               </Link>
               </div>
             </article>
 
