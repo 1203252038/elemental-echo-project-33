@@ -2,12 +2,19 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 const StudentStories = () => {
   const stories = [{
     name: "Alex, 175",
     description: "For students pursuing the KJD path who are dedicated to the long-haul journey of making their LSAT dreams come true:",
     quote: "No matter where you are in life, if you tell Ellen what your goals are, even if you don't believe in yourself and you don't think you can achieve those goals, Ellen will believe in you.",
     buttonText: "Read Alex's Story",
+    <Link 
+      to="/stories/alex"
+      className="rounded-full bg-pink-500 px-6 py-2 text-white hover:bg-pink-600"
+    >
+      Read Alex’s Story
+    </Link>
     image: "photo-1486312338219-ce68d2c6f44d"
   }, {
     name: "Celeste, 174",
