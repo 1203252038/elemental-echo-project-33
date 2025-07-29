@@ -94,6 +94,52 @@ export default function AlexStory() {
                 </p>
                 
               </section>
+              {/* ——— READING ELLEN’S BOOK ——— */}
+              <section>
+                <h2 className="mb-4 text-2xl font-extrabold text-gray-800">
+                  Reading Ellen’s Book:
+                </h2>
+              
+                <p className="mb-4">
+                  This section is dedicated to the skimmers. If you work with Ellen,
+                  the first thing she will do is instruct you to read her book. I consider
+                  myself a pretty great skimmer, so obviously I skimmed it. Somehow… she
+                  knew and she told me she knew. So, I did what most of you are probably thinking:
+                  I skimmed the next couple chapters a bit better.
+                </p>
+              
+                <p className="mb-4">
+                  She will know every single time you cut a corner. I think there is a tendency
+                  for college students to cut corners during their prep because it truly is a lot
+                  on top of a heavy course load. I tried every shortcut possible, so whatever you
+                  are thinking of, it won’t work. Looking back, I was only hurting myself. After
+                  wasting weeks, I went back to page one and created an 80 page single spaced study
+                  guide on Ellen’s book.
+                </p>
+              </section>
+              
+              {/* ——— SOPHOMORE YEAR: LR ——— */}
+              <section>
+                <h2 className="mb-4 text-2xl font-extrabold text-gray-800">
+                  My Sophomore Year: LR
+                </h2>
+              
+                <p className="mb-4">
+                  Since all of my sections needed improvement, Ellen and I began by tackling Logical
+                  Reasoning. The first technique Ellen will likely teach you is how to translate a
+                  stimulus and this is where Ellen’s personality comes into play. You will be translating
+                  approximately a billion of these stimuli over the course of your LSAT journey and
+                  Ellen’s sense of humor makes this incredibly fun.
+                </p>
+              
+                <p className="mb-4">
+                  I never thought I would laugh so much when prepping for the LSAT but Ellen can put
+                  a funny twist on the most boring of all stimuli whether it’s on Nethanderals or how
+                  dryers shrink garments. When searching for an LSAT tutor, I wouldn’t have ever considered
+                  finding somebody that had a sense of humor but I think Ellen perceived that humor was
+                  something that motivated me and incorporated it into every session.
+                </p>
+              </section>
 
               {/* — Add more <section> blocks for each chapter — */}
               <section>
