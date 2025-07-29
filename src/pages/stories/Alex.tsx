@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
-import Footer      from "@/components/Footer";
-import { Link }    from "react-router-dom";
+import Footer from "@/components/Footer";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 export default function AlexStory() {
   return (
@@ -233,7 +234,7 @@ export default function AlexStory() {
 
               {/* BACK LINK */}
               <div className="pt-8 text-center">
-               <Link to={`/stories/${story.slug}`}>
+               <Link to="/student-stories">
                               <Button className="bg-[#F48487] hover:bg-[#f37579] text-white font-neutra font-bold py-2 px-6 rounded-full">
                                 back
                               </Button>
