@@ -140,32 +140,44 @@ export default function AlexStory() {
                   something that motivated me and incorporated it into every session.
                 </p>
               </section>
-
-              {/* — Add more <section> blocks for each chapter — */}
+              {/* ——— JUNIOR YEAR: ACADEMICS & INTERNSHIPS ——— */}
               <section>
                 <h2 className="mb-4 text-2xl font-extrabold text-gray-800">
-                  My Sophomore Year: LR
+                  My Junior Year: My Academics and Internships
                 </h2>
-                <p>
-                  Since all of my sections needed improvement, Ellen and I began
-                  by tackling LR. …
+              
+                <p className="mb-4">
+                  Ellen and I worked on my LR sections for a number of months; however, I think it’s important
+                  to mention the manner in which she advised and supported me in other sectors of my life during
+                  this time. One benefit of beginning to work with Ellen on the early side of the law school admissions
+                  process was she helped me stay organized to keep up my GPA. I came up with study plans for my courses
+                  with Ellen and often would ask her for advice regarding what my schedule should be like during registration.
+                  She proofread my cover letters, retailored my resume, and ran mock interviews with me during our session.
+                  I ended up keeping my GPA high and getting multiple top choice internships.
+                </p>
+              </section>
+              
+              {/* ——— JUNIOR YEAR: RC & GAMES ——— */}
+              <section>
+                <h2 className="mb-4 text-2xl font-extrabold text-gray-800">
+                  My Junior Year: RC and Games
+                </h2>
+              
+                <p className="mb-4">
+                  The bulk of my LSAT prep took place during my third year. After studying LR, we moved to RC. Ellen brought
+                  the same charisma and humor to our RC studying that she did with LR. From that point, we pivoted to implementing
+                  Ellen’s games method which is truly phenomenal. I went from -11 on games to -2 within a couple of weeks.
+                  Finally, I was ready to start doing full practice tests and I scored a 170 on my first practice test after
+                  working with Ellen.
+                </p>
+              
+                <p className="mb-4">
+                  Regardless, I still didn’t feel ready for my upcoming LSAT. I thought my practice scores were a fluke and
+                  tried to push the test off multiple times. However, Ellen assured me that I was ready and although I went
+                  into the test certain that I would prove her wrong, I ended up scoring in the low 170s on the real exam.
                 </p>
               </section>
 
-              {/* Repeat for each heading: junior year RC/Games, fourth year, etc. */}
-
-              {/* THANK-YOU SECTION */}
-              <section>
-                <h2 className="mb-4 text-2xl font-extrabold text-gray-800">
-                  Thank You:
-                </h2>
-                <p>
-                  All in all, if you relate to anything in this account, I
-                  cannot recommend Ellen enough. I would be happy to speak with
-                  anybody considering working with Ellen and answer any
-                  admissions or LSAT related questions.
-                </p>
-              </section>
 
               {/* BACK LINK */}
               <div className="pt-8 text-center">
