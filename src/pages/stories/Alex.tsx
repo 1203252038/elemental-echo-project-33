@@ -236,7 +236,7 @@ export default function AlexStory() {
               <div className="pt-8 text-center">
                <Link to="/student-stories">
                               <Button className="bg-[#F48487] hover:bg-[#f37579] text-white font-neutra font-bold py-2 px-6 rounded-full">
-                                back
+                                ← Back to Student Stories
                               </Button>
                </Link>
               </div>
