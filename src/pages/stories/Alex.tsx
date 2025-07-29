@@ -221,7 +221,7 @@ export default function AlexStory() {
               {/* ——— THANK YOU ——— */}
               <section>
                 <h2 className="mb-4 text-2xl font-extrabold text-gray-800">
-                  Thank You
+                  Thank You:
                 </h2>
               
                 <p className="mb-4">
