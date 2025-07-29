@@ -177,6 +177,58 @@ export default function AlexStory() {
                   into the test certain that I would prove her wrong, I ended up scoring in the low 170s on the real exam.
                 </p>
               </section>
+              {/* ——— FOURTH YEAR: MENTORSHIP ——— */}
+              <section>
+                <h2 className="mb-4 text-2xl font-extrabold text-gray-800">
+                  My Fourth Year: Ellen as a Mentor
+                </h2>
+              
+                <p className="mb-4">
+                  I was ecstatic with my first LSAT score. I was certain I did the best I could possibly do and I was
+                  ready to apply in the upcoming cycle. However, Ellen knew that I could do better. We went back and heavily
+                  reviewed what specific types of questions I was missing and it became clear that I was missing points on
+                  argument part questions and parallel flaw questions. With this specificity, I was able to perfect my logical
+                  reasoning and began scoring in the mid 170s on practice tests. I felt a hundred times more confident on the
+                  material but I was still extraordinarily fearful of retaking the LSAT. I was fearful that I would make careless
+                  mistakes and my score would lower from what I thought was my best work. However, by my third year, I had really
+                  built up a relationship with Ellen, I truly trusted her. At this point, I was also struggling with something
+                  else going on in my life and Ellen tailored my LSAT study schedule so I could get through this period while
+                  still staying on track to apply straight through and retake the exam. This was an extremely hard point in my
+                  life and I will be forever grateful that Ellen was so unbelievably supportive and created a space which
+                  prioritized my mental health while staying on track.
+                </p>
+              
+                <p className="mb-4">
+                  As soon as September came, we dove into the application process. We began this process by talking about my
+                  life and how I looked at the world. At the time, I remember wondering how this was possibly applicable to
+                  my personal statement. However, this big picture approach was extraordinarily helpful because after a couple
+                  of conversations I knew exactly what I wanted to write my statement about. I worked harder than I thought I
+                  was capable of in September with balancing my 13 applications, my internship, and my LSAT prep for my retake.
+                  By the end of September, my applications were complete and I was back to LSAT prep.
+                </p>
+              
+                <p className="mb-4">
+                  A couple of days before my fall exam, I remember calling Ellen and telling her it wasn’t worth retaking the
+                  exam. I explained that I was proud of my application and I should just let it be and cancel the retake.
+                  She was understanding but nicely said that if she was in my shoes, she would want to show the admissions
+                  committees exactly how good she was at the LSAT exam. She assured me that I was far better than I was in
+                  January and with this boost of confidence, I sat for the exam. During the test, I kept reminding myself of
+                  exactly what she said, I kept reminding myself that this was my chance to put everything I learned down
+                  onto the page. I ended up scoring in the mid 170s and getting accepted to both of my top choice law schools.
+                </p>
+              </section>
+              
+              {/* ——— THANK YOU ——— */}
+              <section>
+                <h2 className="mb-4 text-2xl font-extrabold text-gray-800">
+                  Thank You
+                </h2>
+              
+                <p className="mb-4">
+                  All in all, if you relate to anything in this account, I cannot recommend Ellen enough. I would be happy
+                  to speak with anybody considering working with Ellen and answer any admissions or LSAT related questions.
+                </p>
+              </section>
 
 
               {/* BACK LINK */}
