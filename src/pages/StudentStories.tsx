@@ -85,7 +85,7 @@ const StudentStories = () => {
                   <p>
                     In fact, the score is usually the least interesting thing about the student's journey. In reality, it's a little number that gets glued onto their lives ex post facto, even if it does make their dreams come true. At Elemental, we care about how our students reach their goals, and every LSAT journey's behind-the-scenes is a little bit different. That's why we've asked some of our students to share the nitty gritty behind what a huge score improvement really takes, without editing out the tears and temptation to give up.
                   </p>
-                  <p> a&nbsp;<strong> Click on each student name below </strong> to read their complete LSAT autobiography, down to play-by-play of how long they spent on each drill. We couldn't be more grateful they were willing to be so candid in showing what it takes.</p>
+                  <p> &nbsp;<strong> Click on each student name below </strong> to read their complete LSAT autobiography, down to play-by-play of how long they spent on each drill. We couldn't be more grateful they were willing to be so candid in showing what it takes.</p>
                 </div>
 
                 <div className="space-y-8">
