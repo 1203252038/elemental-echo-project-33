@@ -27,7 +27,7 @@ export default function AlexStory() {
               <section className="lg:flex lg:items-start lg:gap-10">
                 {/* Avatar */}
                 <img
-                  src="lovable-uploads/images/alex-headshot.jpg"
+                  src="/lovable-uploads/Images/alex_headshot.jpg"
                   alt="Alex"
                   className="mx-auto mb-6 h-44 w-44 rounded-full object-cover shadow-md lg:mx-0 lg:mb-0 flex-shrink-0"
                 />
