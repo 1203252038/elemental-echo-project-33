@@ -51,7 +51,7 @@ export default function AlexStory() {
 
               {/* BACK LINK */}
               <div className="pt-8 text-center">
-                <Link to="/student-stories">
+                <Link to="/student-stories" onClick={() => window.scrollTo(0, 0)}>
                   <Button className="bg-[#F48487] hover:bg-[#f37579] text-white font-neutra font-bold py-2 px-6 rounded-full">
                     Back to Student Stories
                   </Button>
