@@ -110,7 +110,7 @@ const StudentStories = () => {
                             <blockquote className="font-neutra text-gray-600 italic mb-6 pl-4 border-l-4 border-[#77b8b1]">
                               "{story.quote}"
                             </blockquote>
-                            <Link to={`/stories/${story.slug}`}>
+                            <Link to={`/stories/${story.slug}`} onClick={() => window.scrollTo(0, 0)}>
                               <Button className="bg-[#F48487] hover:bg-[#f37579] text-white font-neutra font-bold py-2 px-6 rounded-full">
                                 {story.buttonText}
                               </Button>
