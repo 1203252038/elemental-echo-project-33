@@ -23,7 +23,7 @@ const stories = [{
   name: "Ed, 168",
   description: "For procrastinators and self-doubters who are ready to realize their LSAT dreams:",
   quote: "Before I began studying for the LSAT things came very easily to me, and I thought the test would be similar. I could not have been more wrong. With the help of Ellen, Team Elemental, and my own dedication, I achieved the score of my dreams, something I never thought possible.",
-  image: "/lovable-uploads/Images/ed_headshot.png",
+  image: "/lovable-uploads/Images/ed_square_headshot.png",
   buttonText: "Read Ed's Story"
 }, {
   slug: "julia",
@@ -37,14 +37,14 @@ const stories = [{
   name: "Sara, 179",
   description: "For all the skimmers out there who think surely they don't have to actually do Translation Drills:",
   quote: "As I painted fences for my Mr. Miyagi, I started to build up a real nose for different answer choices. I felt like I could sniff out a necessary assumption answer from a sufficient, blindfolded. It was a weird time. It was a glorious time. I started to reach a point where, through Party Tricking alone, I could correctly answer 20 out of 25 questions on my first pass, and all on my second. Never once reading the stimulus. Applied to Reading Comprehension questions, the same progress occurred, never once reading the passage.",
-  image: "/lovable-uploads/Images/sara_headshot.png",
+  image: "/lovable-uploads/Images/sara_square_headshot.png",
   buttonText: "Read Sara's Story"
 }, {
   slug: "stephen",
   name: "Stephen, 168",
   description: "For the non-traditional law school applicants who graduated college many years ago and are looking for a well-organized and structured path to mastering the LSAT:",
   quote: "Ellen is not only one of the best instructors I've ever had, but she is also an amazing mentor who will help you shatter your own self-doubt and exceed whatever goal you've set for yourself.",
-  image: "/lovable-uploads/Images/stephen_headshot.png",
+  image: "/lovable-uploads/Images/stephen_square_headshot.png",
   buttonText: "Read Stephen's Story"
 }, {
   slug: "stewart",
