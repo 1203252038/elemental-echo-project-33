@@ -208,6 +208,18 @@ export default function CelesteStory() {
                   she was right.
                 </p>
               </section>
+              <p className="mb-4">
+                  Looking back, the almost nine months of the LSAT journey have completely
+                  changed my mindset for solving problems— not just LSAT questions, but
+                  every challenge in my life. I’m no longer afraid of testing because of
+                  Ellen’s Translation method and her way of reading a passage as a natural,
+                  fun story. After months of talking directly with Ellen and writing papers
+                  together, I now have a deeper understanding of the English language.
+                  I’m incredibly grateful for the chance to join the warm, welcoming, and
+                  inclusive community of Elemental Prep. The community meetings answered my
+                  questions and gave me courage whenever I doubted myself. I’m proud to be
+                  a part of the Elemental community.
+              </p>
 
 
               {/* BACK LINK */}
