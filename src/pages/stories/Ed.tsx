@@ -88,28 +88,31 @@ export default function EdStory() {
               </section>
 
               <section className="space-y-8">
+
                 <p className="text-lg">
                   Follow below for a “day in the life” along my LSAT journey:
                 </p>
-              
+
                 {/* FEB – MAR */}
-                <h2 className="text-2xl text-[#F48487] font-bold">February – March: “Sloooooowwwww down”</h2>
-              
-                <h3 className="text-xl font-semibold">The Drills:</h3>
+                <h2 className="mb-2 text-2xl font-extrabold text-gray-800">
+                  February – March: “Sloooooowwwww down”
+                </h2>
+
+                <h3 className="mb-2 text-xl font-bold text-gray-800">The Drills:</h3>
                 <p>
                   Translation Drills, vocabulary growth, casual reading (for comprehension), re-visit the Loophole –  
-                  I did not engage in any formal “drills” throughout these couple months
+                  I did not engage in any formal “drills” throughout these couple months.
                 </p>
-              
-                <h3 className="text-xl font-semibold">The Results:</h3>
+
+                <h3 className="mb-2 text-xl font-bold text-gray-800">The Results:</h3>
                 <p>
                   I gained confidence in understanding the test holistically.  
                   At this point in my process, I was not taking my studies as seriously as I should have been.  
                   This ended up being a great asset, however, because it allowed me to better understand  
                   the environment necessary in order to succeed.
                 </p>
-              
-                <h3 className="text-xl font-semibold">The Breakdown:</h3>
+
+                <h3 className="mb-2 text-xl font-bold text-gray-800">The Breakdown:</h3>
                 <p>
                   The first two months were dedicated to learning the fundamentals, creating a schedule and finding  
                   a rhythm which encouraged maximum efficiency and intake. Ellen and I crafted manageable goals;  
@@ -124,52 +127,54 @@ export default function EdStory() {
                   I was constantly revisiting the Loophole text and gleaning greater insight.  
                   I found my footing and gained the confidence necessary to take it to the next level.
                 </p>
-              
+
                 {/* APR – JUN */}
-                <h2 className="text-2xl text-[#F48487] font-bold">April – June: “Your will rise to the occasion of the expectations you set for yourself”</h2>
-              
-                <h3 className="text-xl font-semibold">The Drills:</h3>
+                <h2 className="mb-2 text-2xl font-extrabold text-gray-800">
+                  April – June: “Your will rise to the occasion of the expectations you set for yourself”
+                </h2>
+
+                <h3 className="mb-2 text-xl font-bold text-gray-800">The Drills:</h3>
                 <p>
                   Translation Drills, timed Mini-Cycles, Inside-Out RC, memory games, Party Tricking
                 </p>
-              
-                <h3 className="text-xl font-semibold">The Results:</h3>
+
+                <h3 className="mb-2 text-xl font-bold text-gray-800">The Results:</h3>
                 <p>
-                  My translation drills continued to contribute to my growing confidence in tackling the questions;  
+                  My translation drills continued to contribute to my growing confidence in tackling the questions.  
                   I was writing all my problems and misunderstandings in a notebook and reviewing them with Ellen.  
                   My Mini-Cycles started out very poorly: I found myself averaging anywhere between -14 to -8,  
                   then -8 to -6 after camo review. Starting near the end of May into early June,  
                   I got with the program and began inputting the majority of my data into the Elemental Progress Tracker.  
                   At this point, I found some real progress.
                 </p>
-              
-                <h3 className="text-xl font-semibold">The Breakdown:</h3>
+
+                <h3 className="mb-2 text-xl font-bold text-gray-800">The Breakdown:</h3>
                 <p>
                   Through this period of time is when I really got into the process of the LSAT: things got serious.  
                   My goal from the onset of the process was to take the test in August.  
                   Having started studying in February, I felt comfortable taking it easy.  
                   I had to decide to “press go” and really set my sights on success.  
-                  This took more effort than I realized it would and forced me to really take things seriously.  
-                  Throughout these months, I progressively became stronger in the Elemental skill sets  
-                  and took the time to hone my intuition.
+                  This took more effort than I realized it would and forced me to really take things seriously.
                 </p>
                 <p>
-                  I created “sacred hours” where I was unreachable; a large issue I was dealing with was maintaining  
+                  I progressively became stronger in the Elemental skill sets and took the time to hone my intuition.  
+                  I created “sacred hours” where I was unreachable. A large issue I was dealing with was maintaining  
                   my focus and finding solace from the outside world. At times it felt like I wasn’t getting anywhere,  
-                  but in hindsight every single day of effort put forth during these few months was meaningful  
-                  and contributed to my greater success. I moved from strictly Logical Reasoning  
-                  to include Reading Comprehension sections during this period.
+                  but every single day of effort during these few months contributed to my greater success.  
+                  I moved from strictly Logical Reasoning to include Reading Comprehension sections during this period.
                 </p>
-              
+
                 {/* JUL – AUG */}
-                <h2 className="text-2xl text-[#F48487] font-bold">July – August: “You need achievable goals, otherwise you’ll be in a perpetual state of unhappiness”</h2>
-              
-                <h3 className="text-xl font-semibold">The Drills:</h3>
+                <h2 className="mb-2 text-2xl font-extrabold text-gray-800">
+                  July – August: “You need achievable goals, otherwise you’ll be in a perpetual state of unhappiness”
+                </h2>
+
+                <h3 className="mb-2 text-xl font-bold text-gray-800">The Drills:</h3>
                 <p>
                   Party Tricking, Marathons, timed sections, PTs
                 </p>
-              
-                <h3 className="text-xl font-semibold">The Results:</h3>
+
+                <h3 className="mb-2 text-xl font-bold text-gray-800">The Results:</h3>
                 <p>
                   LR – I started lingering around -11 or so, camo-ing at -8.  
                   By the end of July, I found myself stuck in the -6 to -9 range, camo-ing as low as -2.  
@@ -180,51 +185,34 @@ export default function EdStory() {
                   LG – I found myself consistently missing a single game, going perfect for 3 and then being stumped on the fourth.  
                   With hard work, I found myself going -2 to -4 consistently.
                 </p>
-              
-                <h3 className="text-xl font-semibold">The Breakdown:</h3>
+
+                <h3 className="mb-2 text-xl font-bold text-gray-800">The Breakdown:</h3>
                 <p>
                   These last couple months were crunch time.  
-                  There were times when Ellen was uncertain if I was ready;  
-                  there were a few conversations we had where she straight up told me she didn’t think I was up to par yet.  
-                  This challenge lit the fire in my belly that was necessary to push me over the finish line.
+                  There were times when Ellen was uncertain if I was ready; she even told me she didn’t think I was up to par yet.  
+                  That lit the fire in my belly that was necessary to push me over the finish line.
                 </p>
                 <p>
-                  Here is where I really polished my skills and honed in on the finer details,  
-                  the subtle nuances that, in my opinion, are really what makes Elemental’s program so valuable.  
-                  The insight from Ellen over small word choices – “only if” versus “if,” as an example –  
-                  is what really propelled me over the top when taking the actual test.
+                  I polished my skills and honed in on the finer details—the subtle nuances that make Elemental’s program so valuable.  
+                  Ellen’s insight on small word choices—like “only if” versus “if”—really propelled me over the top.
                 </p>
                 <p>
-                  During these final months, I lived and breathed LSAT.  
-                  I dedicated at least four hours every day, more whenever I could, especially on the weekends.  
-                  Ellen and I created lofty but achievable goals to ensure that I was prepared when August came around.  
-                  With an emphasis on the fundamentals, I was sharp and fully prepared for August.
+                  I lived and breathed LSAT. I dedicated at least four hours every day, more on weekends.  
+                  Ellen and I created lofty but achievable goals, and I sharpened the fundamentals to be fully prepared for August.
                 </p>
                 <p>
-                  It was at this point that I was assigned an amazing Logic Games mentor  
-                  and functionally discovered that all of the seemingly disparate skills I had been accumulating  
-                  came together to form a cohesive whole.
+                  I was assigned a phenomenal Logic Games mentor, and all the seemingly disparate skills I had learned came together.
                 </p>
                 <p>
-                  Logic Games are the one piece of the test that I felt came naturally to me.  
-                  When Ellen showed me her method, I quickly caught on (again, a heavy emphasis on the help of my mentor  
-                  who met with me every. single. morning. at 6:30 AM for the three weeks leading up to my test).  
-                  I cannot emphasize enough how important Ellen’s mentorship program was to my success.  
-                  It is not just her, but the entire community she has built, which contributed to my results.
+                  When Ellen showed me her method, I caught on quickly. My mentor met with me at 6:30 AM every morning  
+                  for the three weeks leading up to my test—one of the most important parts of my success.
                 </p>
                 <p>
-                  In the days leading up to the test, I focused on completing full tests and getting comfortable with timing.  
-                  I had been doing timed drills since May/June, but there was a huge emphasis placed  
-                  on being comfortable within the confines of the test time in order to do my best.  
-                  In reality, I hardly made it under the wire; my procrastinating at the start of the process  
-                  really could have harmed me. But it was necessary.
+                  In the days before the test, I focused on full-length PTs and getting confident with time.  
+                  It was tight—I almost didn’t make it. But when I saw that 168, I cried.  
+                  It couldn’t have happened any other way.
                 </p>
-                <p>
-                  When I finished the test, I was confident; but, like I said, I had also been confident when I scored 144.  
-                  However, when I opened the email and learned I scored a 168, I cried in elation.  
-                  It couldn’t have happened any other way in hindsight.  
-                  I am very grateful to have discovered Elemental.
-                </p>
+
               </section>
 
               {/* BACK LINK */}
