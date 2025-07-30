@@ -16,42 +16,42 @@ const stories = [{
   name: "Celeste, 174",
   description: "For English language learners from outside of North America, especially those who are daunted by the language barrier:",
   quote: "I'm a non-native English speaker who believed the LSAT was undefeatable for someone like me. I came to Elemental worried my goal score of 165 was too much to ask, but I finished with a 174, a completely changed mindset, and gratitude for the warm, welcoming, and inclusive Elemental Prep community.",
-  image: "photo-1649972904349-6e44c42644a7",
+  image: "/lovable-uploads/Images/celeste_headshot.jpg",
   buttonText: "Read Celeste's Story"
 }, {
   slug: "ed",
   name: "Ed, 168",
   description: "For procrastinators and self-doubters who are ready to realize their LSAT dreams:",
   quote: "Before I began studying for the LSAT things came very easily to me, and I thought the test would be similar. I could not have been more wrong. With the help of Ellen, Team Elemental, and my own dedication, I achieved the score of my dreams, something I never thought possible.",
-  image: "photo-1581092795360-fd1ca04f0952",
+  image: "/lovable-uploads/Images/ed_headshot.png",
   buttonText: "Read Ed's Story"
 }, {
   slug: "julia",
   name: "Julia, 172",
   description: "For those who lack the self confidence to turn their dreams into reality:",
   quote: "My main issue throughout my LSAT journey was…me. I would constantly get in my own way and delay my progress because I simply lacked self confidence. Elemental Prep changed everything. If you are ready to dedicate yourself to this test and put your trust in the Elemental process, then you can and will succeed. If I can go from the 15th percentile to the 98th, then you can get the score you want.",
-  image: "photo-1649972904349-6e44c42644a7",
+  image: "/lovable-uploads/Images/julia_headshot.png",
   buttonText: "Read Julia's Story"
 }, {
   slug: "sara",
   name: "Sara, 179",
   description: "For all the skimmers out there who think surely they don't have to actually do Translation Drills:",
   quote: "As I painted fences for my Mr. Miyagi, I started to build up a real nose for different answer choices. I felt like I could sniff out a necessary assumption answer from a sufficient, blindfolded. It was a weird time. It was a glorious time. I started to reach a point where, through Party Tricking alone, I could correctly answer 20 out of 25 questions on my first pass, and all on my second. Never once reading the stimulus. Applied to Reading Comprehension questions, the same progress occurred, never once reading the passage.",
-  image: "photo-1519389950473-47ba0277781c",
+  image: "/lovable-uploads/Images/sara_headshot.png",
   buttonText: "Read Sara's Story"
 }, {
   slug: "stephen",
   name: "Stephen, 168",
   description: "For the non-traditional law school applicants who graduated college many years ago and are looking for a well-organized and structured path to mastering the LSAT:",
   quote: "Ellen is not only one of the best instructors I've ever had, but she is also an amazing mentor who will help you shatter your own self-doubt and exceed whatever goal you've set for yourself.",
-  image: "photo-1486312338219-ce68d2c6f44d",
+  image: "/lovable-uploads/Images/stephen_headshot.png",
   buttonText: "Read Stephen's Story"
 }, {
   slug: "stewart",
   name: "Stewart, 168",
   description: "For those who have tried absolutely everything and are on the brink of giving up:",
   quote: "My diagnostic score was a 142. Over three years and four different test prep companies later I could only achieve a practice test score ranging from 148-153. Elemental Prep helped me achieve my dream score after I effectively gave up hope, and I am certain that anyone who comes here with an open and positive attitude, dedication, and willingness to persevere and improve will go far.",
-  image: "photo-1581092795360-fd1ca04f0952",
+  image: "/lovable-uploads/Images/stewart_headshot.png",
   buttonText: "Read Stewart's Story"
 }];
 
