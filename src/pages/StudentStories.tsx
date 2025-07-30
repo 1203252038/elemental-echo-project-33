@@ -95,7 +95,7 @@ const StudentStories = () => {
                         <div className="flex flex-col lg:flex-row gap-8 items-start">
                           <div className="lg:w-1/4 flex justify-center lg:justify-start">
                             <img 
-                              src={`https://images.unsplash.com/${story.image}?w=300&h=300&fit=crop&crop=face`} 
+                              src={story.image} 
                               alt={story.name} 
                               className="w-32 h-32 rounded-lg object-cover shadow-md" 
                             />
