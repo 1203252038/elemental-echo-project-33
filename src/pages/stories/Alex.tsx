@@ -3,7 +3,6 @@ import Footer      from "@/components/Footer";
 import { Link }    from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
-
 export default function AlexStory() {
   return (
     <div className="min-h-screen">
