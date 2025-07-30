@@ -233,9 +233,11 @@ export default function AlexStory() {
 
               {/* BACK LINK */}
               <div className="pt-8 text-center">
-                <Link to="/student-stories" className="text-sky-600 underline hover:text-sky-800">
-                  Back to Student Stories
-                </Link>
+                 <Link to="/student-stories">
+                  <Button className="bg-[#F48487] hover:bg-[#f37579] text-white font-neutra font-bold py-2 px-6 rounded-full">
+                    Back to Student Stories
+                  </Button>
+                  </Link>
               </div>
             </article>
 
