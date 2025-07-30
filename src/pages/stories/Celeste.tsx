@@ -11,7 +11,7 @@ export default function CelesteStory() {
       {/* ——— HERO (same teal strip) ——— */}
       <section className="bg-[#77b8b1] pt-36 pb-20 text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-neutra font-bold text-7xl">Celeste’s LSAT Journey</h1>
+          <h1 className="font-neutra font-bold text-7xl">Celeste's LSAT Journey</h1>
         </div>
       </section>
 
@@ -23,33 +23,41 @@ export default function CelesteStory() {
             {/* ——— MAIN CONTENT ——— */}
             <article className="px-8 py-16 lg:px-20 mx-auto max-w-3xl font-neutra text-[18px] leading-relaxed text-gray-700 space-y-10">
 
-              {/* PRESENT DAY (two-column flex) */}
-              <section className="lg:flex lg:items-start lg:gap-10">
-                {/* Avatar */}
+              {/* PRESENT DAY with wrapped text */}
+              <section>
+                {/* Avatar with floating text */}
                 <img
                   src="/lovable-uploads/Images/celeste_headshot.jpg"
                   alt="Celeste"
-                  className="mx-auto mb-6 h-44 w-44 rounded-full object-cover shadow-md lg:mx-0 lg:mb-0 flex-shrink-0"
+                  className="float-left mr-6 mb-4 h-44 w-44 rounded-full object-cover shadow-md"
                 />
-
-                {/* Text block */}
-                <div className="flex-1">
-                  <p>
-                    I’m a non-native English speaker who believed that the LSAT was undefeatable for someone like me. 
-                    I have vocabularies that I don’t know the meaning of when reading a passage. I would need extra time 
-                    to parse out the sentence when it’s long enough for me to lose track. Worst of all, I had way too few
-                    experiences of reading convoluted English passages compared to native English speakers. 
-                    All of the above made me a super slow English reader, and the LSAT asked for something opposite. 
-                    I studied for the LSAT myself for five months before I found Ellen. I scored 147 for my first timed 
-                    PT after finishing the 7sage curriculums. Honestly, Ellen was my last hope before I gave up the dream
-                    of attending a US law school. So, when I first met Ellen, I told her that my goal was 165, and deep down, 
-                    I was thinking it might be too much to ask for. However, Ellen was just smiling and told me it was perfectly 
-                    doable. Thank God I believed her! I received a 174 on my actual test – a score I couldn’t have even remotely
-                    dreamt about. So what I’m trying to say is that the LSAT is hard-won for me, and I’m grateful to have Ellen 
-                    all the way by my side.
-                  </p>
-                </div>
+                
+                <p className="mb-4">
+                  I'm a non-native English speaker who believed that the LSAT was undefeatable for someone like me. 
+                  I have vocabularies that I don't know the meaning of when reading a passage. I would need extra time 
+                  to parse out the sentence when it's long enough for me to lose track. Worst of all, I had way too few
+                  experiences of reading convoluted English passages compared to native English speakers.
+                </p>
+                
+                <p className="mb-4">
+                  All of the above made me a super slow English reader, and the LSAT asked for something opposite. 
+                  I studied for the LSAT myself for five months before I found Ellen. I scored 147 for my first timed 
+                  PT after finishing the 7sage curriculums. Honestly, Ellen was my last hope before I gave up the dream
+                  of attending a US law school.
+                </p>
+                
+                <p className="mb-4">
+                  So, when I first met Ellen, I told her that my goal was 165, and deep down, 
+                  I was thinking it might be too much to ask for. However, Ellen was just smiling and told me it was perfectly 
+                  doable. Thank God I believed her! I received a 174 on my actual test – a score I couldn't have even remotely
+                  dreamt about. So what I'm trying to say is that the LSAT is hard-won for me, and I'm grateful to have Ellen 
+                  all the way by my side.
+                </p>
+                
+                {/* Clear float */}
+                <div className="clear-both"></div>
               </section>
+
                {/* Intro with portrait */}
               <section className="lg:flex lg:items-start lg:gap-10">
                 <div className="flex-1">
@@ -67,7 +75,7 @@ export default function CelesteStory() {
 
                 <h3 className="mb-2 text-xl font-bold text-gray-800">The Results:</h3>
                 <p className="mb-4">
-                  That’s right. I spent the entire three months on the LR translation drill and LR translation drill
+                  That's right. I spent the entire three months on the LR translation drill and LR translation drill
                   alone. I bet no one had done more translation drills than I did. And it was all worth it. I still
                   remember I spent 1 hour and 45 minutes finishing my first translation section. And I only needed
                   35 minutes to complete one by the end of September.
@@ -77,7 +85,7 @@ export default function CelesteStory() {
                 <p className="mb-4">
                   Honestly, the Translation drill could feel tedious and endless. It was already hard enough for me to
                   read the complex stimulus all the way to the end, let alone talk about it out loud using my own words.
-                  But it wasn’t until then that I realized that I actually didn’t understand the meaning of so many
+                  But it wasn't until then that I realized that I actually didn't understand the meaning of so many
                   stimuli when I thought I did. The process of CLIR also compelled me to actively analyze every stimulus
                   I encountered. As Ellen always said, when she read an LSAT stimulus or passage, she read it as a fun
                   story, not a test material. This was absurd to me at the beginning. However, I gradually learned to
@@ -85,11 +93,11 @@ export default function CelesteStory() {
                   bring the time down.
                 </p>
                 <p className="mb-4">
-                  Because I’m a non-native English speaker, I spent so much time with Ellen discussing the English
+                  Because I'm a non-native English speaker, I spent so much time with Ellen discussing the English
                   words. It was always so fun to learn how Ellen understands a word. She taught me to recognize the root
                   of a word and made me feel that English is so delicate that every word has many underlying, subtle
-                  meanings. For example, I didn’t know the huge difference between scholarship and scholarships. And
-                  something that is controversial is scandalous and problematic in a bad way. Plus, you don’t use
+                  meanings. For example, I didn't know the huge difference between scholarship and scholarships. And
+                  something that is controversial is scandalous and problematic in a bad way. Plus, you don't use
                   attractive to describe a painting, and you should be very cautious when you say a person is attractive.
                 </p>
               </section>
@@ -114,10 +122,10 @@ export default function CelesteStory() {
                 <h3 className="mb-2 text-xl font-bold text-gray-800">The Breakdown:</h3>
                 <p className="mb-4">
                   The RC Translation is challenging because it has too many materials for you to remember. Before
-                  meeting Ellen, I was taught by other LSAT books that I didn’t need to understand every bit of the
+                  meeting Ellen, I was taught by other LSAT books that I didn't need to understand every bit of the
                   passage. Instead, a basic grasp of the main structure would rather suffice. But it was proven wrong. I
                   wasted so much time going back to re-read the passage when there was a question asking about material
-                  I didn’t remember or understand. Translating the RC passage really helped me better understand the
+                  I didn't remember or understand. Translating the RC passage really helped me better understand the
                   flow of the article. I no longer read the passage as separate paragraphs; instead, I read it as a
                   whole story. In order to remember and Translate the entire passage, I actively looked for the logic or
                   the interlocking points between paragraphs. I later found out that this true understanding was
@@ -134,9 +142,9 @@ export default function CelesteStory() {
                 <h3 className="mb-2 text-xl font-bold text-gray-800">The Results:</h3>
                 <p className="mb-4">
                   My first Mini-Cycle was scored -2 on November 11. It was tremendously exciting for both Ellen and me.
-                  I still remember Ellen’s positive reaction to my score for my first section after five months of
+                  I still remember Ellen's positive reaction to my score for my first section after five months of
                   Translation drills. Her warm response to my every tiny success was always lovely and infectious. I was
-                  greatly motivated by Ellen’s feedback to do more drills, just trying not to let her down. I scored
+                  greatly motivated by Ellen's feedback to do more drills, just trying not to let her down. I scored
                   consistently -0 to -3 for my Mini-Cycle ever after.
                 </p>
 
@@ -149,7 +157,7 @@ export default function CelesteStory() {
                   no longer scared of doing questions or making mistakes like I previously was. I believe all the
                   Translation drills gave me the confidence to know that I could really understand a stimulus or passage.
                   And because I started to get the vibe of LSAT, I knew when I chose a correct answer without checking
-                  the answer sheet. I remember Ellen told me that I didn’t have to read the explanations when I got a
+                  the answer sheet. I remember Ellen told me that I didn't have to read the explanations when I got a
                   question wrong because I had the ability to figure it out myself later. This realization made me even
                   more confident when doing the questions.
                 </p>
@@ -180,21 +188,21 @@ export default function CelesteStory() {
                   about the least, as I mostly had -0 to -5 in games using other prep methods before studying with
                   Ellen. However, if I was aiming for something above 170, I would have to make sure that I absolutely
                   could have -0 in games. So I decided to forget everything I learned from other prep companies and
-                  started all over again with Ellen’s method. I quickly brought my score from around -4 to -0.
+                  started all over again with Ellen's method. I quickly brought my score from around -4 to -0.
                 </p>
                 <p className="mb-4">
                   So now it was time to do full PTs. I quickly started to score constantly above 170 since I began to do
                   full PTs. Eventually, I received an official 174 after practicing 7 PTs, all in the range of 173 to
-                  175. So it wasn’t entirely surprising.
+                  175. So it wasn't entirely surprising.
                 </p>
 
                 <h3 className="mb-2 text-xl font-bold text-gray-800">The Breakdown:</h3>
                 <p className="mb-4">
                   Ellen has a unique way of doing Logic Games. I thought other prep methods were good enough for me to
                   complete the section within the time range. So I was surprised to hear Ellen saying that her method
-                  would be even better. However, it was true. Ellen’s method of doing games is straightforward, clever,
-                  and requires the least amount of time. More importantly, it was accurate and ensured I wouldn’t make
-                  mistakes. When I first saw Ellen doing games, I still remember that she didn’t even really solve some
+                  would be even better. However, it was true. Ellen's method of doing games is straightforward, clever,
+                  and requires the least amount of time. More importantly, it was accurate and ensured I wouldn't make
+                  mistakes. When I first saw Ellen doing games, I still remember that she didn't even really solve some
                   of the questions because the answer to those questions was right there on her scratch paper. It looked
                   like magic. I even tested the answers by re-doing the question using old methods. And it turned out
                   she was right.
