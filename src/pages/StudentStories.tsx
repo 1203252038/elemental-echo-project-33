@@ -97,7 +97,7 @@ const StudentStories = () => {
                             <img 
                               src={story.image} 
                               alt={story.name} 
-                              className="w-40 h-40 rounded-lg object-cover shadow-md" 
+                              className="w-60 h-60 rounded-lg object-cover shadow-md" 
                             />
                           </div>
                           <div className="lg:w-3/4">
