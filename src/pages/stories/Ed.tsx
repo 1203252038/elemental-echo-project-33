@@ -3,7 +3,7 @@ import Footer      from "@/components/Footer";
 import { Link }    from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
-export default function CelesteStory() {
+export default function EdStory() {
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -11,7 +11,7 @@ export default function CelesteStory() {
       {/* ——— HERO (same teal strip) ——— */}
       <section className="bg-[#77b8b1] pt-36 pb-20 text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-neutra font-bold text-7xl">Celeste's LSAT Journey</h1>
+          <h1 className="font-neutra font-bold text-7xl">Ed's LSAT Journey</h1>
         </div>
       </section>
 
@@ -27,8 +27,8 @@ export default function CelesteStory() {
               <section>
                 {/* Avatar with floating text */}
                 <img
-                  src="/lovable-uploads/Images/celeste_headshot.jpg"
-                  alt="Celeste"
+                  src="/lovable-uploads/Images/ed_headshot.png"
+                  alt="Ed"
                   className="float-left mr-6 mb-4 h-44 w-44 rounded-full object-cover shadow-md"
                 />
                 
