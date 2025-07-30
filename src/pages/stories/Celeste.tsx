@@ -58,13 +58,15 @@ export default function CelesteStory() {
                 <div className="clear-both"></div>
               </section>
 
-              {/* July – September */}
-              <section>
-                <div className="flex-1">
+                 <div className="flex-1">
                   <p>
                     Follow below for a day in the life along my LSAT journey.
                   </p>
                 </div>
+              
+              {/* July – September */}
+              <section>
+               
                 <h2 className="mb-2 text-2xl font-extrabold text-gray-800">
                   July – September: LR Translation
                 </h2>
