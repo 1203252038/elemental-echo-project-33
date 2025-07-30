@@ -9,7 +9,7 @@ const stories = [{
   name: "Alex, 175",
   description: "For students pursuing the KJD path who are dedicated to the long-haul journey of making their LSAT dreams come true:",
   quote: "No matter where you are in life, if you tell Ellen what your goals are, even if you don't believe in yourself and you don't think you can achieve those goals, Ellen will believe in you.",
-  image: "photo-1486312338219-ce68d2c6f44d",
+  image: "lovable-uploads/images/alex-headshot.jpg",
   buttonText: "Read Alex's Story"
 }, {
   slug: "celeste",
