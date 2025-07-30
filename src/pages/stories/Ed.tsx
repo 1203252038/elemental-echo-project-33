@@ -33,25 +33,54 @@ export default function EdStory() {
                 />
                 
                 <p className="mb-4">
-                  I'm a non-native English speaker who believed that the LSAT was undefeatable for someone like me. 
-                  I have vocabularies that I don't know the meaning of when reading a passage. I would need extra time 
-                  to parse out the sentence when it's long enough for me to lose track. Worst of all, I had way too few
-                  experiences of reading convoluted English passages compared to native English speakers.
+                  In my view, my LSAT journey is by no means unique.  
+                  In fact, I would argue that anyone can achieve what I did if they are determined to do so.  
+                  I attribute my success to Ellen and the whole of the Elemental Prep team.  
+                  I am fortunate to have found this program as it has led me to achieve the score of my dreams,  
+                  to be able to achieve what I never thought possible.  
+                  I learned an important lesson in my LSAT experience: nothing is impossible.
                 </p>
                 
                 <p className="mb-4">
-                  All of the above made me a super slow English reader, and the LSAT asked for something opposite. 
-                  I studied for the LSAT myself for five months before I found Ellen. I scored 147 for my first timed 
-                  PT after finishing the 7sage curriculums. Honestly, Ellen was my last hope before I gave up the dream
-                  of attending a US law school.
+                  I first took the LSAT in February of 2020.  
+                  I had studied for a total of fifteen hours – tops.  
+                  I was attending college as well as working full-time,  
+                  which in turn allowed me to rationalize my lack of effort.  
+                  At this point in my life, things came very easily to me.  
+                  I thought the LSAT would be something similar.  
+                  I could not have been more wrong.  
+                  Having never taken a practice test, my only exposure to the test format was through the textbook I had been self “studying” with.  
+                  I felt confident when I left the testing building.  
+                  A few weeks later, I opened my results: I scored a whopping 144.  
+                  I went on to graduate college and apply to a single school in the hopes they would give me a pity acceptance.  
+                  It didn’t work…
                 </p>
                 
                 <p className="mb-4">
-                  So, when I first met Ellen, I told her that my goal was 165, and deep down, 
-                  I was thinking it might be too much to ask for. However, Ellen was just smiling and told me it was perfectly 
-                  doable. Thank God I believed her! I received a 174 on my actual test – a score I couldn't have even remotely
-                  dreamt about. So what I'm trying to say is that the LSAT is hard-won for me, and I'm grateful to have Ellen 
-                  all the way by my side.
+                  I found <i>The Loophole</i> around the middle of January 2021.  
+                  I immediately loved the work – I found Ellen’s explanations resonating with me on an intuitive level  
+                  and knew that this was the right program for me.  
+                  Before this, I had been resistant to the idea of getting a tutor.  
+                  I thought studying for the LSAT was a sort of litmus test for my ability to succeed in law school.  
+                  It was around the end of January when I swallowed my pride and reached out to the Elemental team.  
+                  I started tutoring on February 25.  
+                  I was very nervous leading up to our first meeting.  
+                  When I met Ellen, my insecurities immediately fell by the wayside.  
+                  I felt like I had known her for a long time, that she was a friend,  
+                  and I was immediately taken aback by her drive to help me succeed.
+                </p>
+                
+                <p className="mb-4">
+                  My process was slow, mainly due to the fact that I procrastinated.  
+                  I questioned myself; my insecurities were in the driver’s seat often,  
+                  leaving me over-worrying and creating stagnation throughout my process.  
+                  In hindsight, these shortcomings were necessary.  
+                  Not only did my experience with Ellen make me into an LSAT machine, scoring in the 94th percentile,  
+                  but I grew astronomically as a person.  
+                  To be candid, Ellen helped me through a fair number of emotional breakdowns;  
+                  I often joked half her job was being a therapist.  
+                  And I am grateful to have discovered her and her work.  
+                  I am a better person because of it, far outside of any intellectual endeavor.
                 </p>
                 
                 {/* Clear float */}
