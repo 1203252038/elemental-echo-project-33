@@ -97,7 +97,7 @@ export default function AlexStory() {
               </section>
               {/* ——— READING ELLEN’S BOOK ——— */}
               <section>
-                <h2 className="mb-4 text-2xl font-extrabold text-gray-800">
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">
                   Reading Ellen’s Book:
                 </h2>
               
