@@ -11,7 +11,7 @@ export default function AlexStory() {
       {/* ——— HERO (same teal strip) ——— */}
       <section className="bg-[#77b8b1] pt-36 pb-20 text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-neutra font-bold text-7xl">Alex’s LSAT Journey</h1>
+          <h1 className="font-neutra font-bold text-7xl">Alex, 175</h1>
         </div>
       </section>
 
@@ -34,7 +34,7 @@ export default function AlexStory() {
 
                 {/* Text block */}
                 <div className="flex-1">
-                  <h2 className="mb-4 text-2xl font-extrabold text-gray-800">
+                  <h2 className="font-sybarite text-gray-800 mb-6 text-30px">
                     Present Day:
                   </h2>
                   <p>
@@ -50,7 +50,7 @@ export default function AlexStory() {
 
               {/* SECOND-YEAR SECTION */}
               <section>
-                <h2 className="mb-4 text-2xl font-extrabold text-gray-800">
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">
                   My Second Year of Undergrad:
                 </h2>
 
@@ -121,7 +121,7 @@ export default function AlexStory() {
               
               {/* ——— SOPHOMORE YEAR: LR ——— */}
               <section>
-                <h2 className="mb-4 text-2xl font-extrabold text-gray-800">
+                 <h2 className="font-sybarite text-gray-800 mb-6 text-30px">
                   My Sophomore Year: LR
                 </h2>
               
@@ -143,7 +143,7 @@ export default function AlexStory() {
               </section>
               {/* ——— JUNIOR YEAR: ACADEMICS & INTERNSHIPS ——— */}
               <section>
-                <h2 className="mb-4 text-2xl font-extrabold text-gray-800">
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">
                   My Junior Year: My Academics and Internships
                 </h2>
               
@@ -160,7 +160,7 @@ export default function AlexStory() {
               
               {/* ——— JUNIOR YEAR: RC & GAMES ——— */}
               <section>
-                <h2 className="mb-4 text-2xl font-extrabold text-gray-800">
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">
                   My Junior Year: RC and Games
                 </h2>
               
@@ -221,7 +221,7 @@ export default function AlexStory() {
               
               {/* ——— THANK YOU ——— */}
               <section>
-                <h2 className="mb-4 text-2xl font-extrabold text-gray-800">
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">
                   Thank You:
                 </h2>
               
