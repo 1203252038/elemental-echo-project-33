@@ -67,7 +67,7 @@ export default function CelesteStory() {
               {/* July – September */}
               <section>
                
-                <h2 className="mb-2 text-2xl font-extrabold text-gray-800">
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">
                   July – September: LR Translation
                 </h2>
 
@@ -102,7 +102,7 @@ export default function CelesteStory() {
 
               {/* September – November */}
               <section>
-                <h2 className="mb-2 text-2xl font-extrabold text-gray-800">
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">
                   September – November: RC Translation, AC Translation, Extracurricular Reading
                 </h2>
 
@@ -133,7 +133,7 @@ export default function CelesteStory() {
 
               {/* November – December */}
               <section>
-                <h2 className="mb-2 text-2xl font-extrabold text-gray-800">
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">
                   November – December: Translation, Party Tricking, Mini-Cycles, Inside Out RC
                 </h2>
 
@@ -163,7 +163,7 @@ export default function CelesteStory() {
 
               {/* January – February */}
               <section>
-                <h2 className="mb-2 text-2xl font-extrabold text-gray-800">
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">
                   January – February: Translation, Stopwatch Sections, Thunderdome, Marathons
                 </h2>
                 <p className="mb-4">
@@ -176,7 +176,7 @@ export default function CelesteStory() {
 
               {/* March */}
               <section>
-                <h2 className="mb-2 text-2xl font-extrabold text-gray-800">
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">
                   March: Translation, Logic Games, Masterpiece Sections, PTs
                 </h2>
 
