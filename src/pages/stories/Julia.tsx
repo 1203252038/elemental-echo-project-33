@@ -44,7 +44,7 @@ export default function JuliaStory() {
                   Follow below for a "day in the life" along my LSAT journey:
                 </p>
                 
-                <h3 className="font-neutra font-bold text-xl text-[#77b8b1] mb-3">February – March: Meeting Ellen, Trying to Quit, and Translation and CLIR Drills</h3>
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">February – March: Meeting Ellen, Trying to Quit, and Translation and CLIR Drills</h2>
                 
                 <p className="mb-4">
                   <strong>The Drills:</strong><br />
@@ -65,7 +65,7 @@ export default function JuliaStory() {
                   Despite my rocky start with Elemental, I knew I was in the right hands. I am pretty confident in saying that there is no one on planet earth who is more passionate about the LSAT and her students than Ellen Cassidy. I gradually started to improve my Translation skills through Translation drills and the Daily Virtual Tutoring lessons. While my Translation skills were improving, I still had zero confidence in my ability to CLIR. This, again, triggered more anxiety-induced freakouts in my study room. Once my Translation skills were pretty solid, Ellen began addressing my insecurity with CLIRing. She assigned CLIR drills to me to start directly tackling this problem. Looking back, it is almost funny to me how much I struggled with CLIRs in the beginning because they have become second nature to me.
                 </p>
                 
-                <h3 className="font-neutra font-bold text-xl text-[#77b8b1] mb-3">March-April: Sinking into the Process</h3>
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">March-April: Sinking into the Process</h2>
                 
                 <p className="mb-4">
                   <strong>The Drills:</strong><br />
@@ -82,7 +82,7 @@ export default function JuliaStory() {
                   After doing the RC Marathon for a week, I finally had a solid understanding of the entire passage, which not only improved my overall score, but gave me the confidence that I was lacking for so long in RC. Out of all of the testing methodologies I used, the TQCM/PV/B acronym was one of the most essential ones in improving my score. It was the perfect way for me to ensure that I followed each and every step and never allowed my standards to fall.
                 </p>
                 
-                <h3 className="font-neutra font-bold text-xl text-[#77b8b1] mb-3">April-May: More RC and Form Checks</h3>
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">April-May: More RC and Form Checks</h2>
                 
                 <p className="mb-4">
                   <strong>The Drills:</strong><br />
@@ -99,7 +99,7 @@ export default function JuliaStory() {
                   By this point in my studying, I had developed a solid understanding of the exam. My main issue throughout my time with Elemental that I kept running into was…me. I would constantly get in my own way and delay my progress because I simply lacked the confidence in my abilities. My sessions with Ellen and my Form Checks with Molly really helped me start to see how far I had come.
                 </p>
                 
-                <h3 className="font-neutra font-bold text-xl text-[#77b8b1] mb-3">May-June: More Form Checks and Putting it All Together</h3>
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">May-June: More Form Checks and Putting it All Together</h2>
                 
                 <p className="mb-4">
                   <strong>The Drills:</strong><br />
@@ -123,7 +123,7 @@ export default function JuliaStory() {
                   After the test, I felt confident that I did much better than my 162, but, like everyone, I was feeling nervous and insecure. Before I knew it, it was almost score release day. I knew I wouldn't be able to check my score without having a complete mental breakdown, so thankfully Molly was gracious enough to check for me. I gave her my username and password to my LSAC account the night before and then…waited. Before I knew it, I was being awoken by my phone ringing. And that's when I found out I had received…a 172!
                 </p>
                 
-                <h3 className="font-neutra font-bold text-xl text-[#77b8b1] mb-3">Final Thoughts</h3>
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">Final Thoughts</h2>
                 
                 <p className="mb-4">
                   At the end of the day, my results speak for themselves. I put in the time and effort and was able to score a 172. While studying for this test is an emotional process (trust me, I have cried countless times), it is important to be realistic. This is a difficult test. One of the most difficult standardized tests out there. Mastering this exam does not happen overnight and requires a great deal of dedication. If you are ready to dedicate yourself to this test and put your trust in the Elemental process, then you can and will succeed.
@@ -137,7 +137,7 @@ export default function JuliaStory() {
                   PS – If you are like me and suffer from medical and mental health issues, please apply for accommodations through LSAC for your examination. There is absolutely nothing wrong with acknowledging that because of physical or mental health challenges, you need your examination to be accommodated. Seriously, DO IT!
                 </p>
                 
-                <h3 className="font-neutra font-bold text-xl text-[#77b8b1] mb-3">Final Final Thoughts</h3>
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">Final Final Thoughts</h2>
                 
                 <ul className="list-disc pl-6 mb-4 space-y-2">
                   <li>Do not take the test until you're ready (and trust me, Ellen will let you know when you're ready).</li>

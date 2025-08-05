@@ -48,7 +48,7 @@ export default function SaraStory() {
                   Follow below for a "day in the life" along my LSAT journey:
                 </p>
                 
-                <h3 className="font-neutra font-bold text-xl text-[#77b8b1] mb-3">July – August: The Race to Nowhere</h3>
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">July – August: The Race to Nowhere</h2>
                 
                 <p className="mb-4">
                   Late into my first round of prep, around April, a friend recommended The Loophole to me. I read it once and took some tools from it, but didn't really take it seriously. CLIRs? Who knew 'em. I remember reading about the translation drills and literally texting the same friend, "I don't have to actually do these, do I?" There was, admittedly, a lot of eye rolling.
@@ -74,7 +74,7 @@ export default function SaraStory() {
                   Spoiler alert: it wasn't. It… was a 170.
                 </p>
                 
-                <h3 className="font-neutra font-bold text-xl text-[#77b8b1] mb-3">September: Party Tricking Bootcamp</h3>
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">September: Party Tricking Bootcamp</h2>
                 
                 <p className="mb-4">
                   In the two weeks between when I took August and when my score was released, something started to shift inside me. Having a bit of a break really forced me to decide what my next steps might be, and whether I would continue prep. Applications were looming, and I was itching to get my essays done and submitted. But at the same time, reflecting on the past month of work, it felt clear to me that there was more I could do. I felt like I was juuuuuuust starting to get the hang of translating and CLIRing. When my score was released, I almost felt relieved. Transparently, had it been any higher, I probably would have stopped. But here was a clear sign to me that I needed to give the LSAT one more go.
@@ -96,7 +96,7 @@ export default function SaraStory() {
                   And magic happened. Stripped of the stimulus, my critical brain was allowed to stop searching for THE RIGHT ANSWER in a panicked state, and instead it could translate and assess answer choices for who/what they were. For weeks, I strengthened my powerful-provable senses, getting into the weeds of each and every answer choice and looking for clues. I felt like a detective. I felt like the karate kid. I felt, well, a little insane, but I also felt curious again. As I painted fences for my Mr. Miyagi, I started to build up a real nose for different answer choices. I felt like I could sniff out a necessary assumption answer from a sufficient, blindfolded. It was a weird time. It was a glorious time. I started to reach a point where, through Party Tricking alone, I could correctly answer 20 out of 25 questions on my first pass, and all on my second. Never once reading the stimulus. Applied to Reading Comprehension questions, the same progress occurred, never once reading the passage.
                 </p>
                 
-                <h3 className="font-neutra font-bold text-xl text-[#77b8b1] mb-3">October: Putting It All Together</h3>
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">October: Putting It All Together</h2>
                 
                 <p className="mb-4">
                   After my month of bootcamp, my mindset had shifted dramatically. During this time, I had also been paired with a mentor and three mentees. This gave me the opportunity to learn with other students. Working through the processes with others compounded the work I was doing and deepened my own knowledge. When I began full timed sections again, my average scores jumped to a range of -0 to -3.
@@ -118,7 +118,7 @@ export default function SaraStory() {
                   And magic happened again. As I began to take four section tests again to prepare for test day, my scores reflected back all the work I had done. I took these tests with the goal of putting everything back together again, and holding myself to the highest standard I could. On my second practice test I got my first 180.
                 </p>
                 
-                <h3 className="font-neutra font-bold text-xl text-[#77b8b1] mb-3">November: The Last Hurrah</h3>
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">November: The Last Hurrah</h2>
                 
                 <p className="mb-4">
                   I… was getting tired. My body was tired. My eyes were tired. I found myself making mistakes even though I knew better now. Suffice to say, these last two weeks were a mental battle.
@@ -140,7 +140,7 @@ export default function SaraStory() {
                   For many students the home stretch before test day can be mentally difficult, and often, in your prep, you go back to the basics. Harkening all the way back to my early Elemental beginnings, I revisited the On-Demand Instant Replays, verifying that my method was strong and viable. Before each practice section, I sat and wrote my list of intentions: everything from "no Mission, no question," to "stay curious," to "there is only 1 right answer." Giving myself the time to reflect on the previous day's wrong answers in my Wrong Answer Journal and converting them into mantras for the day's sections was my way of returning to square one, learning from my mistakes, and distilling everything I had learned into bite-sized notions I could repeat to myself while I practiced. I continued my intentions, my On-Demand Instant Replays, and my Wrong Answer Journal all the way through. On test day, my very last intention read: "Own this test. You earned it." And I did. My final score was a 179.
                 </p>
                 
-                <h3 className="font-neutra font-bold text-xl text-[#77b8b1] mb-3">Closing Thoughts</h3>
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">Closing Thoughts</h2>
                 
                 <p className="mb-4">
                   If you asked me in June if I saw myself scoring a 179, I would likely have said no. In fact, even right up until test day, a part of me doubted my ability to keep my cool and do everything I had learned at once, when I needed to do it. The LSAT is a lot like tap dancing while spinning plates and juggling: you have to keep everything moving, in tandem, in balance. All engines are firing. But holding yourself to the highest standard is, ultimately, an opportunity. An opportunity to trust yourself. An opportunity to believe in yourself. An opportunity to prove that hard work can pay off. An opportunity to show admissions committees your willingness to try and fail and try again, work harder, do better. Really, an opportunity to challenge the negative self-conception that urges you to give up, that tells you you cannot go one step further. You can. It's a choice, but it's your choice. It's work, but it's your work. I can think of no better preparatory experience for me heading into law school, because I've proved to myself that I can do big things, hard things. Even if it's just me, alone, in a room with a book and a pencil.

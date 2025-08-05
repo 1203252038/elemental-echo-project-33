@@ -40,7 +40,7 @@ export default function StephenStory() {
                   I found Ellen's perspective in the way she broke down complex concepts into digestible pieces to be not only refreshing, but also engaging and fun. By the end of my first read-through, I knew that I had to reach out to Ellen and see what else I could do to truly grasp and master this test. As a current 1L in a T-14 looking back on this moment a year later, this was hands down the best decision I made during my entire law school application process.
                 </p>
                 
-                <h3 className="font-neutra font-bold text-xl text-[#77b8b1] mb-3">August – September: "Translation, Translation, Translation"</h3>
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">August – September: "Translation, Translation, Translation"</h2>
                 
                 <p className="mb-4">
                   <strong>The Drills:</strong><br />
@@ -57,7 +57,7 @@ export default function StephenStory() {
                   As mentioned above, I had a tremendously difficult time with translations at first. All I had to do was read a sentence or two, then restate them in my own words right? How difficult could that be? Extremely hard. I found that prior to doing translation drills, I would often literally forget whatever I had just read two to three sentences before. This would cause me to re-read stimuli multiple times at the cost of very precious seconds or even minutes. So I had to quite honestly re-train my brain to retain more information in my short-term memory, and then progress to utilizing what I captured in my short-term memory and turn that into legitimately understanding what I had just read by translating the stimulus' words into my own. After doing that, I then had to spot inconsistencies between what the conclusion stated and how or if the premises actually supported the claim(s). This was such an awkward process to re-tool how my own brain functions, but it was absolutely critical to truly grasping (and mastering) the complex layers of Logical Reasoning. I can, without a doubt, say that translation drills were the most important aspect of my LSAT journey.
                 </p>
                 
-                <h3 className="font-neutra font-bold text-xl text-[#77b8b1] mb-3">September – October: "Actively apply the principles you're learning until they become second nature"</h3>
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">September – October: "Actively apply the principles you're learning until they become second nature"</h2>
                 
                 <p className="mb-4">
                   <strong>The Drills:</strong><br />
@@ -74,7 +74,7 @@ export default function StephenStory() {
                   Ellen's method for Logic Games makes intuitive sense in that it enables you to see pretty much the entire game in one place. I was used to solving games a different way at this point so there was a period of unlearning old habits; however, her method was so much more efficient and effective that it didn't take long for me to hit my first -0 section. For Logical Reasoning, I really focused on what the question types were asking me to do by actually doing drills that really honed my mission formation. This forced me to deeply analyze the stimuli in a way that I hadn't done so before. Then, I began to translate answer choices just like I was translating stimuli in the previous month in order to better understand what the answer choices were really saying. This was huge for me as it quickly enabled me to spot patterns between answer choices and across different question stems. Moving to Reading Comprehension, the drills Ellen had me do focused on the "bigger picture" or broad strokes of the passages instead of the details that I would get so caught up in most times. This helped tremendously in how I approached each question.
                 </p>
                 
-                <h3 className="font-neutra font-bold text-xl text-[#77b8b1] mb-3">November – December: "Set higher standards for yourself"</h3>
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">November – December: "Set higher standards for yourself"</h2>
                 
                 <p className="mb-4">
                   <strong>The Drills:</strong><br />
@@ -91,7 +91,7 @@ export default function StephenStory() {
                   Mini-Cycles, hyperskipping, and becoming more consistent and accurate with diagramming were pivotal to bringing my Logical Reasoning scores as close to -0 as possible. At this point, I understood all of the different question types and what I needed to look for in correct answer choices. My main issue, however, was that I often didn't know why the incorrect answer choices were actually incorrect. Mini- Cycles helped me focus on this issue while also helping me to build confidence in choosing correct answer choices. As I got better at this, I cemented what I had learned by hyperskipping more difficult questions by having to rely on my gut instincts and to not waste valuable time. Diagramming then became very important for addressing my weaknesses when it came to dense stimuli and parsing out the more abstract arguments. For the Reading Comprehension, Translations and Reverse Shuffle drills were used to work on my memory and information retention of key points in passages so that I could answer questions more efficiently and quickly.
                 </p>
                 
-                <h3 className="font-neutra font-bold text-xl text-[#77b8b1] mb-3">December – January: "Be awake, alert, and aware. Consistency is key"</h3>
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">December – January: "Be awake, alert, and aware. Consistency is key"</h2>
                 
                 <p className="mb-4">
                   <strong>The Drills:</strong><br />
@@ -103,7 +103,7 @@ export default function StephenStory() {
                   With only 4-6 weeks left until my final LSAT take, timing and consistency became the most important aspects for me to master. At this point, most of my drills were still untimed and I was averaging about 40-42 minutes per Logical Reasoning and Reading Comprehension section with scores ranging anywhere from -0 to -6 per section (I had already gotten Logic Games to under 35 minutes with a consistent score of -0 by this point). This was a pretty significant score differential so I had to really focus on my accuracy in order to bring my range into a much tighter and more consistent -0 to -3. I also had to bring my timing per section down to 35 minutes – this is where the Marathons and FailSafes kicked in. With not a lot of time left until I took my January LSAT, I had to focus very hard on becoming faster and more consistent in my practice – we believed we could achieve this through the sheer volume of sections (with CAMO review) that I completed during this time.
                 </p>
                 
-                <h3 className="font-neutra font-bold text-xl text-[#77b8b1] mb-3">The Final Result</h3>
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">The Final Result</h2>
                 
                 <p className="mb-4">
                   When the day finally arrived, I felt pretty confident and prepared going into the exam. My experience, however, was not great. I began to crack under the pressure after the first section and by the last section, thoughts about canceling my score began to creep in. I felt like a total mess and was devastated after I completed the exam – in fact, I went straight to the LSAC website to cancel my score and was one click away from actually canceling my score. By the grace of a higher power, I couldn't do it. I knew deep down that I should consult with Ellen first before making any rash decisions, and when I brought it up to her a few days later, she very strongly convinced me not to cancel my score (and by very strongly I mean scolded/praised/begged/guilt-tripped/rationally persuaded me over the course of two weeks) until the score cancelation deadline passed. Without a single doubt in my mind, listening to her was the best decision I have ever made. My final score turned out to be a 168, which was technically towards the lower band of where I was scoring in practice, but significantly better than I expected based on my testing experience. The decision not to cancel, and Ellen's support throughout my entire LSAT journey, was instrumental to me ultimately having a successful law school application cycle. In fact, I'm extremely confident that I would not be writing this student story during the first week at my dream law school if it wasn't for Ellen.
