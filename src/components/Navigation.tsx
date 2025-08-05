@@ -78,10 +78,10 @@ const Navigation = () => {
                             JULIA, 172
                           </Link>
                           <Link to="/stories/stephen" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-navy hover:bg-gray-100 transition-colors duration-300">
-                            STEPHEN'S LSAT JOURNEY
+                            STEPHEN, 168
                           </Link>
                           <Link to="/stories/stewart" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-navy hover:bg-gray-100 transition-colors duration-300">
-                            STEWART'S LSAT JOURNEY
+                            STEWART, 168
                           </Link>
                         </div>
                       </div>
