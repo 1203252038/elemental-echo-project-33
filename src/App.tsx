@@ -15,6 +15,9 @@ import SaraStory     from "@/pages/stories/Sara";
 import StephenStory  from "@/pages/stories/Stephen";
 import StewartStory  from "@/pages/stories/Stewart";
 import TheLoophole from "./pages/TheLoophole";
+import SeeHowWithVids from "./pages/SeeHowWithVids";
+import Terms from "./pages/Terms";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Tutoring from "./pages/Tutoring";
 import Camo from "./pages/Camo";
 import Login from "./pages/Login";
@@ -40,6 +43,9 @@ const App = () => (
           <Route path="/stories/stephen" element={<StephenStory />} />
           <Route path="/stories/stewart" element={<StewartStory />} />
           <Route path="/the-loophole-in-lsat-logical-reasoning" element={<TheLoophole />} />
+          <Route path="/see-how-with-vids" element={<SeeHowWithVids />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/tutoring" element={<Tutoring />} />
           <Route path="/camo" element={<Camo />} />
           <Route path="/login" element={<Login />} />

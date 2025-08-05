@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 const Index = () => {
   return <div className="min-h-screen">
       <Navigation />
@@ -18,9 +19,11 @@ const Index = () => {
             {/* Subhead: 50px Neutra */}
             <p className="font-neutra text-50px mb-8">I can prove it.</p>
             {/* Button: 20px Neutra uppercase bold */}
-            <Button className="bg-[#F48487] hover:bg-[#f37579] text-white font-neutra text-20px font-bold py-3 px-8 rounded-full uppercase tracking-wide">
-              See How
-            </Button>
+            <Link to="/see-how-with-vids">
+              <Button className="bg-[#F48487] hover:bg-[#f37579] text-white font-neutra text-20px font-bold py-3 px-8 rounded-full uppercase tracking-wide">
+                See How
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
