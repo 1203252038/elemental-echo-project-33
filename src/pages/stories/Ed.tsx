@@ -94,7 +94,7 @@ export default function EdStory() {
                 </p>
 
                 {/* FEB – MAR */}
-                <h2 className="mb-2 text-2xl font-extrabold text-gray-800">
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">
                   February – March: “Sloooooowwwww down”
                 </h2>
 
@@ -129,7 +129,7 @@ export default function EdStory() {
                 </p>
 
                 {/* APR – JUN */}
-                <h2 className="mb-2 text-2xl font-extrabold text-gray-800">
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">
                   April – June: “Your will rise to the occasion of the expectations you set for yourself”
                 </h2>
 
@@ -165,7 +165,7 @@ export default function EdStory() {
                 </p>
 
                 {/* JUL – AUG */}
-                <h2 className="mb-2 text-2xl font-extrabold text-gray-800">
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">
                   July – August: “You need achievable goals, otherwise you’ll be in a perpetual state of unhappiness”
                 </h2>
 
