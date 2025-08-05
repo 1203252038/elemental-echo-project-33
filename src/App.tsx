@@ -16,6 +16,8 @@ import StephenStory  from "@/pages/stories/Stephen";
 import StewartStory  from "@/pages/stories/Stewart";
 import TheLoophole from "./pages/TheLoophole";
 import Tutoring from "./pages/Tutoring";
+import Camo from "./pages/Camo";
+import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -39,6 +41,8 @@ const App = () => (
           <Route path="/stories/stewart" element={<StewartStory />} />
           <Route path="/the-loophole-in-lsat-logical-reasoning" element={<TheLoophole />} />
           <Route path="/tutoring" element={<Tutoring />} />
+          <Route path="/camo" element={<Camo />} />
+          <Route path="/login" element={<Login />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
