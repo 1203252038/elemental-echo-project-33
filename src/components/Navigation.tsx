@@ -23,7 +23,7 @@ const Navigation = () => {
       return `font-neutra font-medium text-12px uppercase px-[14px] py-[8px] rounded-[3px] transition-all duration-300 ${
         active
           ? 'bg-transparent text-peach'
-          : 'bg-transparent text-sage hover:bg-peach-light hover:text-white focus:bg-peach-light focus:text-white'
+          : 'bg-transparent text-sage hover:text-peach focus:text-peach'
       }`;
     }
   };
