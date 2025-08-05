@@ -44,7 +44,7 @@ export default function StewartStory() {
                   Follow below for a "day in the life" along my LSAT journey:
                 </p>
                 
-                <h3 className="font-neutra font-bold text-xl text-[#77b8b1] mb-3">February: Translation</h3>
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">February: Translation</h2>
                 
                 <p className="mb-4">
                   <strong>The Results:</strong><br />
@@ -64,7 +64,7 @@ export default function StewartStory() {
                   Do not be discouraged if this process takes a long time to comprehend. For me, I devoted the entire month of February to understanding these fundamental concepts. I also had to break old habits that I had learned with other test prep platforms.
                 </p>
                 
-                <h3 className="font-neutra font-bold text-xl text-[#77b8b1] mb-3">March: Translation, Party Tricking, Mini-Cycles, Inside Out RC</h3>
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">March: Translation, Party Tricking, Mini-Cycles, Inside Out RC</h2>
                 
                 <p className="mb-4">
                   <strong>The Results:</strong><br />
@@ -92,7 +92,7 @@ export default function StewartStory() {
                   RC translation can be very meticulous – particularly with a complicated passage. Practicing RC sections therefore took me much longer to complete than LR.
                 </p>
                 
-                <h3 className="font-neutra font-bold text-xl text-[#77b8b1] mb-3">April: Translation, Party Tricking, Mini-Cycles, Inside Out RC, Timed Sections</h3>
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">April: Translation, Party Tricking, Mini-Cycles, Inside Out RC, Timed Sections</h2>
                 
                 <p className="mb-4">
                   <strong>The Results:</strong><br />
@@ -104,7 +104,7 @@ export default function StewartStory() {
                   The LR practice sections that I completed took a significant amount of time, with each section ranging from 56 – 98 minutes. Although this was substantial, I was able to improve my scoring and time to average -7 within about 65 minutes by the end of the month.
                 </p>
                 
-                <h3 className="font-neutra font-bold text-xl text-[#77b8b1] mb-3">May: Translation, Timed Sections</h3>
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">May: Translation, Timed Sections</h2>
                 
                 <p className="mb-4">
                   <strong>The Results:</strong><br />
@@ -132,7 +132,7 @@ export default function StewartStory() {
                   The LG videos are literally mind-blowing. After spending so much time with previous test prep platforms memorizing diagrams and different methods of approaching different types of games, learning Ellen's method was truly eye-opening and alleviated a lot of stress that I previously had for the LG section.
                 </p>
                 
-                <h3 className="font-neutra font-bold text-xl text-[#77b8b1] mb-3">June – July: Translation, Timed Sections, PTs</h3>
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">June – July: Translation, Timed Sections, PTs</h2>
                 
                 <p className="mb-4">
                   <strong>The Results:</strong><br />
@@ -152,7 +152,7 @@ export default function StewartStory() {
                   Ellen also recommended that I re-read The Loophole. This allowed me to internalize pointers more effectively since I now had more context after studying throughout the Spring and Summer.
                 </p>
                 
-                <h3 className="font-neutra font-bold text-xl text-[#77b8b1] mb-3">August: Test Day!</h3>
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">August: Test Day!</h2>
                 
                 <p className="mb-4">
                   In the two weeks before my test, I continued to take PTs and re-read The Loophole. Based on my PT scores, I was confident that I would score in the 164-167 range. My 168 therefore came as a surprise! However, I hope that this experience not only serves as a testimony to Ellen's superior method and ability as a tutor, but also as encouragement to those who consider themselves ill-suited to standardized tests. If Ellen was able to help me improve my score to this degree, I am certain that she can help anyone who comes to her with an open and positive attitude, dedication, and willingness to persevere and improve. Good luck!
