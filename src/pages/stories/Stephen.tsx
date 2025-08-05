@@ -11,7 +11,7 @@ export default function StephenStory() {
       {/* ——— HERO (same teal strip) ——— */}
       <section className="bg-[#77b8b1] pt-36 pb-20 text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-neutra font-bold text-7xl">Stephen's LSAT Journey</h1>
+          <h1 className="font-neutra font-bold text-7xl">Stephen, 168</h1>
         </div>
       </section>
 
