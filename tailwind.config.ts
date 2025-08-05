@@ -72,6 +72,7 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				peach: 'hsl(var(--peach))',
+				navy: 'hsl(var(--navy))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
