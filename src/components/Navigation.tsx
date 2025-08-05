@@ -19,10 +19,10 @@ const Navigation = () => {
           : 'bg-transparent text-white hover:bg-light-teal hover:text-white focus:bg-light-teal focus:text-white'
       }`;
     } else {
-      // Inner pages styling: sage text, peach-light on hover/active
+      // Inner pages styling: sage text, peach text for active (no background)
       return `font-neutra font-medium text-12px uppercase px-[14px] py-[8px] rounded-[3px] transition-all duration-300 ${
         active
-          ? 'bg-peach-light text-white'
+          ? 'bg-transparent text-peach'
           : 'bg-transparent text-sage hover:bg-peach-light hover:text-white focus:bg-peach-light focus:text-white'
       }`;
     }
