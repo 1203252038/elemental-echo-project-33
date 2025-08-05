@@ -5,18 +5,31 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
+  const isHomePage = location.pathname === '/';
+
   // Nav pill button styling helper
   const getNavPillStyles = (path: string, isActive?: boolean) => {
     const active = isActive || location.pathname === path;
-    return `font-neutra font-medium text-12px uppercase px-[14px] py-[8px] rounded-[3px] transition-all duration-300 ${
-      active
-        ? 'bg-peach text-white'
-        : 'bg-transparent text-navy hover:bg-peach hover:text-white focus:bg-peach focus:text-white'
-    }`;
+    
+    if (isHomePage) {
+      // Home page styling: white text on transparent, light-teal on hover
+      return `font-neutra font-medium text-12px uppercase px-[14px] py-[8px] rounded-[3px] transition-all duration-300 ${
+        active
+          ? 'bg-light-teal text-white'
+          : 'bg-transparent text-white hover:bg-light-teal hover:text-white focus:bg-light-teal focus:text-white'
+      }`;
+    } else {
+      // Inner pages styling: sage text, peach-light on hover/active
+      return `font-neutra font-medium text-12px uppercase px-[14px] py-[8px] rounded-[3px] transition-all duration-300 ${
+        active
+          ? 'bg-peach-light text-white'
+          : 'bg-transparent text-sage hover:bg-peach-light hover:text-white focus:bg-peach-light focus:text-white'
+      }`;
+    }
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+    <nav className={`fixed top-0 left-0 right-0 z-50 shadow-md ${isHomePage ? 'bg-teal' : 'bg-white'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">{/* 64px = h-16 */}
           {/* Logo section */}

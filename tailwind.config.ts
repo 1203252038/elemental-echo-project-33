@@ -73,6 +73,10 @@ export default {
 				},
 				peach: 'hsl(var(--peach))',
 				navy: 'hsl(var(--navy))',
+				teal: 'hsl(var(--teal))',
+				'light-teal': 'hsl(var(--light-teal))',
+				sage: 'hsl(var(--sage))',
+				'peach-light': 'hsl(var(--peach-light))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
