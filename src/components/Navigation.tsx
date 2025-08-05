@@ -30,11 +30,11 @@ const Navigation = () => {
           {/* Desktop navigation - with more padding and proper color transitions */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline flex-wrap gap-x-4 gap-y-1 py-6 my-0">
-              <Link to="/" className={`font-neutra text-12px px-1 py-1 transition-colors duration-300 ${isScrolled ? 'hover:text-gray-700' : 'hover:text-gray-200'}`}>
+              <Link to="/" className={`font-neutra text-12px px-1 py-1 transition-colors duration-300 ${isScrolled ? 'hover:text-peach' : 'hover:text-peach'}`}>
                 HOME
               </Link>
               <div className="relative group">
-                <button className={`font-neutra text-12px px-1 py-1 transition-colors duration-300 flex items-center ${isScrolled ? 'hover:text-gray-700' : 'hover:text-gray-200'}`}>
+                <button className={`font-neutra text-12px px-1 py-1 transition-colors duration-300 flex items-center ${isScrolled ? 'hover:text-peach' : 'hover:text-peach'}`}>
                   ELEMENTAL ACADEMY
                   <span className="ml-1 inline-block w-0 h-0 border-l-[3px] border-r-[3px] border-t-[4px] border-l-transparent border-r-transparent border-t-current"></span>
                 </button>
@@ -50,21 +50,21 @@ const Navigation = () => {
                 </div>
               </div>
               <div className="relative group">
-                <Link to="/the-loophole-in-lsat-logical-reasoning" className={`font-neutra text-12px px-1 py-1 transition-colors duration-300 flex items-center ${isScrolled ? 'hover:text-gray-700' : 'hover:text-gray-200'}`}>
+                <Link to="/the-loophole-in-lsat-logical-reasoning" className={`font-neutra text-12px px-1 py-1 transition-colors duration-300 flex items-center ${isScrolled ? 'hover:text-peach' : 'hover:text-peach'}`}>
                   THE LOOPHOLE
                   <span className="ml-1 inline-block w-0 h-0 border-l-[3px] border-r-[3px] border-t-[4px] border-l-transparent border-r-transparent border-t-current"></span>
                 </Link>
               </div>
-              <Link to="/tutoring" className={`font-neutra text-12px px-1 py-1 transition-colors duration-300 ${isScrolled ? 'hover:text-gray-700' : 'hover:text-gray-200'}`}>
+              <Link to="/tutoring" className={`font-neutra text-12px px-1 py-1 transition-colors duration-300 ${isScrolled ? 'hover:text-peach' : 'hover:text-peach'}`}>
                 LSAT TUTORING
               </Link>
-              <button className={`font-neutra text-12px px-1 py-1 transition-colors duration-300 ${isScrolled ? 'hover:text-gray-700' : 'hover:text-gray-200'}`}>
+              <button className={`font-neutra text-12px px-1 py-1 transition-colors duration-300 ${isScrolled ? 'hover:text-peach' : 'hover:text-peach'}`}>
                 LOGIN
               </button>
-              <button className={`font-neutra text-12px px-1 py-1 transition-colors duration-300 ${isScrolled ? 'hover:text-gray-700' : 'hover:text-gray-200'}`}>
+              <button className={`font-neutra text-12px px-1 py-1 transition-colors duration-300 ${isScrolled ? 'hover:text-peach' : 'hover:text-peach'}`}>
                 REGISTER
               </button>
-              <button className={`font-neutra text-12px px-1 py-1 transition-colors duration-300 ${isScrolled ? 'hover:text-gray-700' : 'hover:text-gray-200'}`}>
+              <button className={`font-neutra text-12px px-1 py-1 transition-colors duration-300 ${isScrolled ? 'hover:text-peach' : 'hover:text-peach'}`}>
                 JOIN OUR NEWSLETTER
               </button>
             </div>
@@ -72,7 +72,7 @@ const Navigation = () => {
           
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)} className={`inline-flex items-center justify-center p-2 rounded-md focus:outline-none transition-colors duration-300 ${isScrolled ? 'hover:text-gray-700' : 'hover:text-gray-200'}`}>
+            <button onClick={() => setIsOpen(!isOpen)} className={`inline-flex items-center justify-center p-2 rounded-md focus:outline-none transition-colors duration-300 ${isScrolled ? 'hover:text-peach' : 'hover:text-peach'}`}>
               <span className="sr-only">Open main menu</span>
               {!isOpen ? (
                 <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
