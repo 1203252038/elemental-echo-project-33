@@ -180,8 +180,8 @@ export default function AlexStory() {
               </section>
               {/* ——— FOURTH YEAR: MENTORSHIP ——— */}
               <section>
-                <h2 className="mb-4 text-2xl font-extrabold text-gray-800">
-                  My Fourth Year: Ellen as a Mentor
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">
+                   My Fourth Year: Ellen as a Mentor
                 </h2>
               
                 <p className="mb-4">
