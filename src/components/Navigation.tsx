@@ -46,46 +46,46 @@ const Navigation = () => {
                 HOME
               </Link>
                 <div className="relative group">
-                <button className={getNavPillStyles('/about-elemental', location.pathname === '/about-elemental')}>
+                <button className={getNavPillStyles('/about-elemental', location.pathname === '/about-elemental' || location.pathname === '/student-stories' || location.pathname.startsWith('/stories/'))}>
                   ELEMENTAL ACADEMY
                   <span className="ml-1 inline-block w-0 h-0 border-l-[3px] border-r-[3px] border-t-[4px] border-l-transparent border-r-transparent border-t-current"></span>
                 </button>
-                <div className="absolute top-full left-0 mt-1 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 bg-white border border-gray-200 shadow-lg">
+                <div className="absolute top-full left-0 mt-1 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 bg-white border border-gray-200 shadow-lg z-50">
                   <div className="py-2">
                     <Link to="/about-elemental" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-navy hover:bg-gray-100 transition-colors duration-300">
                       TEAM ELEMENTAL
                     </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="relative group">
-                <button className={getNavPillStyles('/student-stories', location.pathname.startsWith('/student-stories') || location.pathname.startsWith('/stories/'))}>
-                  STUDENT STORIES
-                  <span className="ml-1 inline-block w-0 h-0 border-r-[3px] border-l-[3px] border-t-[4px] border-r-transparent border-l-transparent border-t-current"></span>
-                </button>
-                <div className="absolute top-full right-0 mt-1 w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 bg-white border border-gray-200 shadow-lg z-50">
-                  <div className="py-2">
-                    <Link to="/stories/alex" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-navy hover:bg-gray-100 transition-colors duration-300">
-                      ALEX, 175
-                    </Link>
-                    <Link to="/stories/sara" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-navy hover:bg-gray-100 transition-colors duration-300">
-                      SARA, 179
-                    </Link>
-                    <Link to="/stories/ed" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-navy hover:bg-gray-100 transition-colors duration-300">
-                      ED, 168
-                    </Link>
-                    <Link to="/stories/celeste" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-navy hover:bg-gray-100 transition-colors duration-300">
-                      CELESTE, 174
-                    </Link>
-                    <Link to="/stories/julia" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-navy hover:bg-gray-100 transition-colors duration-300">
-                      JULIA, 172
-                    </Link>
-                    <Link to="/stories/stephen" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-navy hover:bg-gray-100 transition-colors duration-300">
-                      STEPHEN'S LSAT JOURNEY
-                    </Link>
-                    <Link to="/stories/stewart" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-navy hover:bg-gray-100 transition-colors duration-300">
-                      STEWART'S LSAT JOURNEY
-                    </Link>
+                    <div className="relative group/nested">
+                      <button className="w-full text-left block px-4 py-2 font-neutra font-medium text-12px uppercase text-navy hover:bg-gray-100 transition-colors duration-300">
+                        STUDENT STORIES
+                        <span className="ml-1 inline-block w-0 h-0 border-r-[3px] border-l-[3px] border-t-[4px] border-r-transparent border-l-transparent border-t-current"></span>
+                      </button>
+                      <div className="absolute top-0 left-full ml-1 w-52 opacity-0 invisible group-hover/nested:opacity-100 group-hover/nested:visible transition-all duration-200 bg-white border border-gray-200 shadow-lg z-50">
+                        <div className="py-2">
+                          <Link to="/stories/alex" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-navy hover:bg-gray-100 transition-colors duration-300">
+                            ALEX, 175
+                          </Link>
+                          <Link to="/stories/sara" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-navy hover:bg-gray-100 transition-colors duration-300">
+                            SARA, 179
+                          </Link>
+                          <Link to="/stories/ed" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-navy hover:bg-gray-100 transition-colors duration-300">
+                            ED, 168
+                          </Link>
+                          <Link to="/stories/celeste" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-navy hover:bg-gray-100 transition-colors duration-300">
+                            CELESTE, 174
+                          </Link>
+                          <Link to="/stories/julia" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-navy hover:bg-gray-100 transition-colors duration-300">
+                            JULIA, 172
+                          </Link>
+                          <Link to="/stories/stephen" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-navy hover:bg-gray-100 transition-colors duration-300">
+                            STEPHEN'S LSAT JOURNEY
+                          </Link>
+                          <Link to="/stories/stewart" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-navy hover:bg-gray-100 transition-colors duration-300">
+                            STEWART'S LSAT JOURNEY
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
