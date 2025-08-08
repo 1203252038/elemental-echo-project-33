@@ -55,14 +55,11 @@ const Navigation = () => {
                     <Link to="/about-elemental" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-navy hover:bg-gray-100 transition-colors duration-300">
                       TEAM ELEMENTAL
                     </Link>
-                    <Link to="/student-stories" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-navy hover:bg-gray-100 transition-colors duration-300">
-                      STUDENT STORIES
-                    </Link>
                     <div className="relative group/nested">
-                      <button className="w-full text-left block px-4 py-2 font-neutra font-medium text-12px uppercase text-navy hover:bg-gray-100 transition-colors duration-300">
-                        INDIVIDUAL STORIES
+                      <Link to="/student-stories" className="w-full text-left block px-4 py-2 font-neutra font-medium text-12px uppercase text-navy hover:bg-gray-100 transition-colors duration-300">
+                        STUDENT STORIES
                         <span className="ml-1 inline-block w-0 h-0 border-r-[3px] border-l-[3px] border-t-[4px] border-r-transparent border-l-transparent border-t-current"></span>
-                      </button>
+                      </Link>
                       <div className="absolute top-0 left-full ml-1 w-52 opacity-0 invisible group-hover/nested:opacity-100 group-hover/nested:visible transition-all duration-200 bg-white border border-gray-200 shadow-lg z-50">
                         <div className="py-2">
                           <Link to="/stories/alex" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-navy hover:bg-gray-100 transition-colors duration-300">
