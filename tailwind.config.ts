@@ -76,6 +76,7 @@ export default {
 				teal: 'hsl(var(--teal))',
 				'light-teal': 'hsl(var(--light-teal))',
 				sage: 'hsl(var(--sage))',
+				'nav-grey': 'hsl(var(--nav-grey))',
 				'peach-light': 'hsl(var(--peach-light))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
