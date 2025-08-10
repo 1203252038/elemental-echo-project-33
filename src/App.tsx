@@ -45,7 +45,7 @@ const App = () => (
           <Route path="/stories/stephen" element={<StephenStory />} />
           <Route path="/stories/stewart" element={<StewartStory />} />
           <Route path="/the-loophole-in-lsat-logical-reasoning" element={<TheLoophole />} />
-          <Route path="/see-how-with-vids" element={<SeeHowWithVids />} />
+          <Route path="/see-how" element={<SeeHowWithVids />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/tutoring" element={<Tutoring />} />
