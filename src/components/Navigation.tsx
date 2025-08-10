@@ -4,25 +4,38 @@ import { useAuth } from "@/hooks/useAuth";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
   const { user, signOut } = useAuth();
 
   const isHomePage = location.pathname === '/';
 
+  // Scroll detection
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    if (isHomePage) {
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }
+  }, [isHomePage]);
+
   // Nav pill button styling helper
   const getNavPillStyles = (path: string, isActive?: boolean) => {
     const active = isActive || location.pathname === path;
     
-    if (isHomePage) {
-      // Home page styling: white text on transparent, light-teal on hover
-      return `font-neutra font-medium text-12px uppercase px-[14px] py-[8px] rounded-[3px] transition-all duration-300 ${
+    if (isHomePage && !isScrolled) {
+      // Home page at top: white text on transparent, light-teal on hover
+      return `font-neutra font-medium text-12px uppercase px-[14px] py-[8px] rounded-[3px] transition-all duration-[180ms] ease-out ${
         active
           ? 'bg-light-teal text-white'
           : 'bg-transparent text-white hover:bg-light-teal hover:text-white focus:bg-light-teal focus:text-white'
       }`;
     } else {
-      // Inner pages styling: sage text, peach text for active (no background)
-      return `font-neutra font-medium text-12px uppercase px-[14px] py-[8px] rounded-[3px] transition-all duration-300 ${
+      // Home page scrolled OR inner pages: sage text, peach text for active (no background)
+      return `font-neutra font-medium text-12px uppercase px-[14px] py-[8px] rounded-[3px] transition-all duration-[180ms] ease-out ${
         active
           ? 'bg-transparent text-peach'
           : 'bg-transparent text-sage hover:text-peach focus:text-peach'
@@ -31,7 +44,11 @@ const Navigation = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 ${isHomePage ? 'bg-[#77b8b1]' : 'bg-white shadow-md'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-[180ms] ease-out ${
+      isHomePage && !isScrolled 
+        ? 'bg-[#77b8b1]' 
+        : 'bg-white shadow-md'
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">{/* 64px = h-16 */}
           {/* Logo section */}
