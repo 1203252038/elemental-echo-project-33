@@ -34,11 +34,11 @@ const Navigation = () => {
           : 'bg-transparent text-white hover:bg-light-teal hover:text-white focus:bg-light-teal focus:text-white'
       }`;
     } else {
-      // Home page scrolled OR inner pages: nav-grey text, peach text for active (no background)
+      // Home page scrolled OR inner pages: foreground text, peach text for active (no background)
       return `font-neutra font-medium text-12px uppercase px-[14px] py-[8px] rounded-[3px] transition-all duration-[180ms] ease-out ${
         active
           ? 'bg-transparent text-peach'
-          : 'bg-transparent text-nav-grey hover:text-peach focus:text-peach'
+          : 'bg-transparent text-foreground hover:text-peach focus:text-peach'
       }`;
     }
   };
@@ -71,35 +71,35 @@ const Navigation = () => {
                 </button>
                 <div className="absolute top-full left-0 mt-1 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 bg-white border border-gray-200 shadow-lg z-50">
                   <div className="py-2">
-                    <Link to="/about-elemental" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-nav-grey hover:bg-gray-100 transition-colors duration-300">
+                    <Link to="/about-elemental" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                       TEAM ELEMENTAL
                     </Link>
                     <div className="relative group/nested">
-                      <Link to="/student-stories" className="w-full text-left block px-4 py-2 font-neutra font-medium text-12px uppercase text-nav-grey hover:bg-gray-100 transition-colors duration-300">
+                      <Link to="/student-stories" className="w-full text-left block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                         STUDENT STORIES
                         <span className="ml-1 inline-block w-0 h-0 border-r-[3px] border-l-[3px] border-t-[4px] border-r-transparent border-l-transparent border-t-current"></span>
                       </Link>
                       <div className="absolute top-0 left-full ml-1 w-52 opacity-0 invisible group-hover/nested:opacity-100 group-hover/nested:visible transition-all duration-200 bg-white border border-gray-200 shadow-lg z-50">
                         <div className="py-2">
-                          <Link to="/stories/alex" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-nav-grey hover:bg-gray-100 transition-colors duration-300">
+                          <Link to="/stories/alex" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                             ALEX, 175
                           </Link>
-                          <Link to="/stories/sara" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-nav-grey hover:bg-gray-100 transition-colors duration-300">
+                          <Link to="/stories/sara" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                             SARA, 179
                           </Link>
-                          <Link to="/stories/ed" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-nav-grey hover:bg-gray-100 transition-colors duration-300">
+                          <Link to="/stories/ed" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                             ED, 168
                           </Link>
-                          <Link to="/stories/celeste" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-nav-grey hover:bg-gray-100 transition-colors duration-300">
+                          <Link to="/stories/celeste" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                             CELESTE, 174
                           </Link>
-                          <Link to="/stories/julia" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-nav-grey hover:bg-gray-100 transition-colors duration-300">
+                          <Link to="/stories/julia" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                             JULIA, 172
                           </Link>
-                          <Link to="/stories/stephen" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-nav-grey hover:bg-gray-100 transition-colors duration-300">
+                          <Link to="/stories/stephen" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                             STEPHEN, 168
                           </Link>
-                          <Link to="/stories/stewart" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-nav-grey hover:bg-gray-100 transition-colors duration-300">
+                          <Link to="/stories/stewart" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                             STEWART, 168
                           </Link>
                         </div>
@@ -115,14 +115,14 @@ const Navigation = () => {
                 </button>
                 <div className="absolute top-full left-0 mt-1 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 bg-white border border-gray-200 shadow-lg z-50">
                   <div className="py-2">
-                    <Link to="/the-loophole-in-lsat-logical-reasoning" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-nav-grey hover:bg-gray-100 transition-colors duration-300">
+                    <Link to="/the-loophole-in-lsat-logical-reasoning" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                       BUY THE BOOK
                     </Link>
-                    <Link to="/camo" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-nav-grey hover:bg-gray-100 transition-colors duration-300">
+                    <Link to="/camo" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                       CAMO
                     </Link>
                     <div className="relative group/bonus">
-                      <button className="w-full text-left block px-4 py-2 font-neutra font-medium text-12px uppercase text-nav-grey hover:bg-gray-100 transition-colors duration-300">
+                      <button className="w-full text-left block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                         BONUS
                         <span className="ml-1 inline-block w-0 h-0 border-r-[3px] border-l-[3px] border-t-[4px] border-r-transparent border-l-transparent border-t-current"></span>
                       </button>
@@ -130,28 +130,28 @@ const Navigation = () => {
                          <div className="py-2">
                            {user ? (
                              <>
-                               <Link to="/bonus/test-taker" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-nav-grey hover:bg-gray-100 transition-colors duration-300">
+                               <Link to="/bonus/test-taker" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                                  HOW TO BE A GOOD TEST TAKER
                                </Link>
-                               <Link to="/bonus/challenge-questions" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-nav-grey hover:bg-gray-100 transition-colors duration-300">
+                               <Link to="/bonus/challenge-questions" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                                  CHALLENGE QUESTION EXPLANATIONS
                                </Link>
-                               <Link to="/bonus/answer-keys" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-nav-grey hover:bg-gray-100 transition-colors duration-300">
+                               <Link to="/bonus/answer-keys" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                                  ANSWER KEYS
                                </Link>
-                               <Link to="/bonus/deleted-scenes" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-nav-grey hover:bg-gray-100 transition-colors duration-300">
+                               <Link to="/bonus/deleted-scenes" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                                  DELETED SCENES
                                </Link>
-                               <Link to="/bonus/study-gear" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-nav-grey hover:bg-gray-100 transition-colors duration-300">
+                               <Link to="/bonus/study-gear" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                                  STUDY GEAR RECOMMENDATIONS
                                </Link>
-                               <Link to="/bonus/newsletter" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-nav-grey hover:bg-gray-100 transition-colors duration-300">
+                               <Link to="/bonus/newsletter" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                                  GET MORE LOOPHOLE IN YOUR INBOX
                                </Link>
                              </>
                            ) : (
                              <>
-                               <Link to="/auth" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-nav-grey hover:bg-gray-100 transition-colors duration-300">
+                               <Link to="/auth" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                                  LOGIN TO ACCESS BONUS CONTENT
                                </Link>
                              </>
@@ -175,7 +175,7 @@ const Navigation = () => {
                     <div className="py-2">
                       <button 
                         onClick={() => signOut()}
-                        className="w-full text-left block px-4 py-2 font-neutra font-medium text-12px uppercase text-nav-grey hover:bg-gray-100 transition-colors duration-300"
+                        className="w-full text-left block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300"
                       >
                         LOGOUT
                       </button>
@@ -195,7 +195,7 @@ const Navigation = () => {
           
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)} className="inline-flex items-center justify-center p-2 rounded-md text-nav-grey hover:text-peach focus:outline-none transition-colors duration-300">
+            <button onClick={() => setIsOpen(!isOpen)} className="inline-flex items-center justify-center p-2 rounded-md text-foreground hover:text-peach focus:outline-none transition-colors duration-300">
               <span className="sr-only">Open main menu</span>
               {!isOpen ? (
                 <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -215,9 +215,9 @@ const Navigation = () => {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
-            <Link to="/" className="font-neutra font-medium text-12px uppercase block px-3 py-2 text-nav-grey hover:text-peach">HOME</Link>
-            <Link to="/about-elemental" className="font-neutra font-medium text-12px uppercase block px-3 py-2 text-nav-grey hover:text-peach">TEAM ELEMENTAL</Link>
-            <Link to="/student-stories" className="font-neutra font-medium text-12px uppercase block px-3 py-2 text-nav-grey hover:text-peach">STUDENT STORIES</Link>
+            <Link to="/" className="font-neutra font-medium text-12px uppercase block px-3 py-2 text-foreground hover:text-peach">HOME</Link>
+            <Link to="/about-elemental" className="font-neutra font-medium text-12px uppercase block px-3 py-2 text-foreground hover:text-peach">TEAM ELEMENTAL</Link>
+            <Link to="/student-stories" className="font-neutra font-medium text-12px uppercase block px-3 py-2 text-foreground hover:text-peach">STUDENT STORIES</Link>
           </div>
         </div>
       )}
