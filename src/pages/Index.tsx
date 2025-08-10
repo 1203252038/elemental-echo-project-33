@@ -19,7 +19,7 @@ const Index = () => {
             {/* Subhead: 50px Neutra */}
             <p className="font-neutra text-50px mb-8">I can prove it.</p>
             {/* Button: 20px Neutra uppercase bold */}
-            <Link to="/see-how-with-vids">
+            <Link to="/see-how">
               <Button className="bg-[#F48487] hover:bg-[#f37579] text-white font-neutra text-20px font-bold py-3 px-8 rounded-full uppercase tracking-wide">
                 See How
               </Button>
