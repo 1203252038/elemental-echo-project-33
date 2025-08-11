@@ -35,7 +35,7 @@ const stories = [{
 }, {
   slug: "sara",
   name: "Sara, 179",
-  description: "For all the skimmers out there who think surely they don't have to <strong>actually</strong> do Translation Drills:",
+  description: "For all the skimmers out there who think surely they don't have to <b>Text</b> do Translation Drills:",
   quote: "As I painted fences for my Mr. Miyagi, I started to build up a real nose for different answer choices. I felt like I could sniff out a necessary assumption answer from a sufficient, blindfolded. It was a weird time. It was a glorious time. I started to reach a point where, through Party Tricking alone, I could correctly answer 20 out of 25 questions on my first pass, and all on my second. Never once reading the stimulus. Applied to Reading Comprehension questions, the same progress occurred, never once reading the passage.",
   image: "/lovable-uploads/Images/sara_square_headshot.jpg",
   buttonText: "Read Sara's Story"
