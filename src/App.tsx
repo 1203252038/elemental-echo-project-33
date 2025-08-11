@@ -20,7 +20,7 @@ import SeeHowWithVids from "./pages/SeeHowWithVids";
 import Terms from "./pages/Terms";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Tutoring from "./pages/Tutoring";
-import Camo from "./pages/Camo";
+
 import Login from "./pages/Login";
 import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
@@ -51,7 +51,7 @@ const App = () => (
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/tutoring" element={<Tutoring />} />
-          <Route path="/camo" element={<Camo />} />
+          
           <Route path="/login" element={<Login />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/bonus/test-taker" element={<BonusContent title="How to Be a Good Test Taker" />} />

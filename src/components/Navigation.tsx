@@ -118,9 +118,9 @@ const Navigation = () => {
                     <Link to="/the-loophole-in-lsat-logical-reasoning" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                       BUY THE BOOK
                     </Link>
-                    <Link to="/camo" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
+                    <a href="https://elementalprep.com/camo/" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                       CAMO
-                    </Link>
+                    </a>
                     <div className="relative group/bonus">
                       <button className="w-full text-left block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                         BONUS
