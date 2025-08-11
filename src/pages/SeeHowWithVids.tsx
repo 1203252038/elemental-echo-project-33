@@ -284,12 +284,12 @@ const SeeHowWithVids = () => {
                   {/* Call to Action Buttons */}
                   <div className="flex flex-col sm:flex-row gap-6 justify-center mt-12">
                     <Link to="/tutoring">
-                      <Button className="bg-[#F48487] hover:bg-[#f37579] text-white font-neutra text-20px font-bold py-3 px-8 rounded-full">
+                      <Button className="bg-[#F48487] hover:bg-[#f37579] text-white font-neutra font-bold py-2 px-6 rounded-full">
                         Learn More About Tutoring
                       </Button>
                     </Link>
                     <Link to="/student-stories">
-                      <Button className="bg-[#77b8b1] hover:bg-[#6ba8a1] text-white font-neutra text-20px font-bold py-3 px-8 rounded-full">
+                      <Button className="bg-[#F48487] hover:bg-[#f37579] text-white font-neutra font-bold py-2 px-6 rounded-full">
                         Read More Case Studies
                       </Button>
                     </Link>
