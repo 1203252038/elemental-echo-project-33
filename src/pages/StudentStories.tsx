@@ -77,7 +77,7 @@ const StudentStories = () => {
             {/* Main Content Section */}
             <section className="py-16 px-8 lg:px-16">
               <div className="max-w-6xl mx-auto">
-                <h2 className="font-sybarite text-gray-800 mb-6 text-30px">What Improvement Really Looks Like</h2>
+                <h2 className="font-sybarite text-gray-800 mb-6 text-30px"> What Improvement <em>Really</em> Looks Like</h2>
                 <p className="font-neutra text-18px text-gray-700 leading-relaxed mb-6">
                   There's a story behind every score at Elemental.
                 </p>
