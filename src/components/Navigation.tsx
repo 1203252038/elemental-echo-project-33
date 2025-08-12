@@ -113,7 +113,7 @@ const Navigation = () => {
                   THE LOOPHOLE
                   <span className="ml-1 inline-block w-0 h-0 border-l-[3px] border-r-[3px] border-t-[4px] border-l-transparent border-r-transparent border-t-current"></span>
                 </Link>
-                <div className="absolute top-full left-0 mt-1 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 bg-white border border-gray-200 shadow-lg z-50">
+                <div className="absolute top-full left-0 mt-1 w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 bg-white border border-gray-200 shadow-lg z-50">
                   <div className="py-2">
                     <Link to="/the-loophole-in-lsat-logical-reasoning" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                       BUY THE BOOK
