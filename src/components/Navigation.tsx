@@ -82,7 +82,7 @@ const Navigation = () => {
                       <div className="absolute top-0 left-full ml-1 w-52 opacity-0 invisible group-hover/nested:opacity-100 group-hover/nested:visible transition-all duration-200 bg-white border border-gray-200 shadow-lg z-50">
                         <div className="py-2">
                           <Link to="/stories/alex" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
-                            ALEX, 175
+                            ALEX, 15
                           </Link>
                           <Link to="/stories/sara" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                             CELESTE, 174
