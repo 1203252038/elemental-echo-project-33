@@ -85,16 +85,16 @@ const Navigation = () => {
                             ALEX, 175
                           </Link>
                           <Link to="/stories/sara" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
-                            SARA, 179
+                            CELESTE, 174
                           </Link>
                           <Link to="/stories/ed" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                             ED, 168
                           </Link>
                           <Link to="/stories/celeste" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
-                            CELESTE, 174
+                            JULIA, 172
                           </Link>
                           <Link to="/stories/julia" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
-                            JULIA, 172
+                            SARA, 179 
                           </Link>
                           <Link to="/stories/stephen" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                             STEPHEN, 168
