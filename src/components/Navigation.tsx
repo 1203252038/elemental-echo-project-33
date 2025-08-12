@@ -109,7 +109,7 @@ const Navigation = () => {
                 </div>
               </div>
               <div className="relative group">
-                <Link to="/the-loophole-in-lsat-logical-reasoning" className={getNavPillStyles('/the-loophole-in-lsat-logical-reasoning', location.pathname === '/the-loophole-in-lsat-logical-reasoning' || location.pathname === '/camo' || location.pathname === '/login')}>
+                <Link to="/the-loophole-in-lsat-logical-reasoning" className={getNavPillStyles('/the-loophole-in-lsat-logical-reasoning')}>
                   THE LOOPHOLE
                   <span className="ml-1 inline-block w-0 h-0 border-l-[3px] border-r-[3px] border-t-[4px] border-l-transparent border-r-transparent border-t-current"></span>
                 </Link>
