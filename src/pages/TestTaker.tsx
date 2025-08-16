@@ -23,12 +23,6 @@ const TestTaker = () => {
             {/* Main Content Section */}
             <section className="py-16 px-8 lg:px-16">
               <div className="max-w-6xl mx-auto">
-                <div className="text-center mb-8">
-                  <p className="font-neutra text-18px text-gray-700">
-                    View the PDF guide below to learn essential test-taking strategies.
-                  </p>
-                </div>
-                
                 {/* PDF Viewer Container */}
                 <div className="bg-gray-50 rounded-lg p-4 shadow-inner">
                   <iframe
