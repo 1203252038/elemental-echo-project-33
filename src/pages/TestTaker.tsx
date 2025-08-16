@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { supabase } from "@/integrations/supabase/client";
 import { useState, useEffect } from "react";
-import { useToast } from "@/components/ui/use-toast";
+import { useToast } from "@/hooks/use-toast";
 
 const TestTaker = () => {
   const [user, setUser] = useState(null);
