@@ -15,14 +15,6 @@ const TestTaker = () => {
     const checkUser = async () => {
       const { data: { user } } = await supabase.auth.getUser();
       setUser(user);
-      
-      // If user is logged in, automatically access the PDF after user state is set
-      if (user && !pdfUrl && !loading) {
-        // Use a small delay to ensure state is updated
-        setTimeout(() => {
-          accessPDF();
-        }, 500);
-      }
     };
     
     checkUser();
@@ -34,6 +26,16 @@ const TestTaker = () => {
 
     return () => subscription.unsubscribe();
   }, []);
+
+  // Separate effect to handle PDF loading when user is set
+  useEffect(() => {
+    console.log('User effect triggered, user:', user, 'pdfUrl:', pdfUrl, 'loading:', loading);
+    
+    if (user && !pdfUrl && !loading) {
+      console.log('Calling accessPDF for logged in user');
+      accessPDF();
+    }
+  }, [user]); // This effect runs whenever user changes
 
   const accessPDF = async () => {
     console.log('accessPDF called, user:', user, 'loading:', loading);
