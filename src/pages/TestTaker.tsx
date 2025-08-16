@@ -15,6 +15,11 @@ const TestTaker = () => {
     const checkUser = async () => {
       const { data: { user } } = await supabase.auth.getUser();
       setUser(user);
+      
+      // If user is logged in, automatically access the PDF
+      if (user && !pdfUrl && !loading) {
+        accessPDF();
+      }
     };
     
     checkUser();
@@ -22,6 +27,11 @@ const TestTaker = () => {
     // Listen for auth changes
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
       setUser(session?.user ?? null);
+      
+      // If user just logged in, automatically access the PDF
+      if (session?.user && !pdfUrl && !loading) {
+        setTimeout(() => accessPDF(), 100); // Small delay to ensure state is updated
+      }
     });
 
     return () => subscription.unsubscribe();
@@ -119,22 +129,13 @@ const TestTaker = () => {
                       </div>
                     </div>
                   ) : (
-                    /* Access button for authenticated users */
+                    /* Loading state for authenticated users */
                     <div className="bg-gray-50 rounded-lg p-8 shadow-inner text-center">
                       <div className="max-w-md mx-auto">
                         <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                          Welcome back, {user.email}!
+                          Loading your content...
                         </h3>
-                        <p className="text-gray-600 mb-6">
-                          You have access to this premium PDF guide. Click below to view it.
-                        </p>
-                        <button 
-                          className="bg-[#F48487] hover:bg-[#f37579] text-white font-neutra text-16px font-bold py-3 px-6 rounded-full transition-all duration-200 disabled:opacity-50"
-                          onClick={accessPDF}
-                          disabled={loading}
-                        >
-                          {loading ? "Loading..." : "Access PDF Guide"}
-                        </button>
+                        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#F48487] mx-auto"></div>
                       </div>
                     </div>
                   )
