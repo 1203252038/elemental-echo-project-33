@@ -24,10 +24,15 @@ Deno.serve(async (req) => {
       );
     }
 
-    // Create Supabase client
+    // Create Supabase client with service role for storage access
     const supabaseUrl = Deno.env.get('SUPABASE_URL')!;
     const supabaseKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
-    const supabase = createClient(supabaseUrl, supabaseKey);
+    const supabase = createClient(supabaseUrl, supabaseKey, {
+      auth: {
+        autoRefreshToken: false,
+        persistSession: false
+      }
+    });
 
     // Verify the JWT token
     const token = authHeader.replace('Bearer ', '');
