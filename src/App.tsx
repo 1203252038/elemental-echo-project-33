@@ -25,6 +25,7 @@ import Login from "./pages/Login";
 import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
 import BonusContent from "./pages/BonusContent";
+import TestTaker from "./pages/TestTaker";
 
 const queryClient = new QueryClient();
 
@@ -54,7 +55,7 @@ const App = () => (
           
           <Route path="/login" element={<Login />} />
           <Route path="/auth" element={<Auth />} />
-          <Route path="/bonus/test-taker" element={<BonusContent title="How to Be a Good Test Taker" />} />
+          <Route path="/bonus/test-taker" element={<TestTaker />} />
           <Route path="/bonus/challenge-questions" element={<BonusContent title="Challenge Question Explanations" />} />
           <Route path="/bonus/answer-keys" element={<BonusContent title="Answer Keys" />} />
           <Route path="/bonus/deleted-scenes" element={<BonusContent title="Deleted Scenes" />} />
