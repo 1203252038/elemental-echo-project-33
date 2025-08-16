@@ -26,14 +26,14 @@ const TestTaker = () => {
                 {/* PDF Viewer Container */}
                 <div className="bg-gray-50 rounded-lg p-4 shadow-inner">
                   <iframe
-                    src="/src/pages/BonusPdfs/The Loophole Bonus Content/How to be a Good Test Taker/How-to-Be-a-Good-Test-Taker.pdf"
+                    src="/src/pages/BonusPdfs/The Loophole Bonus Content/How to be a Good Test Taker/How-to-Be-a-Good-Test-Taker-Demo-Cover-Page.pdf"
                     className="w-full h-[800px] border-0 rounded"
                     title="How to Be a Good Test Taker PDF"
                   >
                     <p className="text-center text-gray-600 p-8">
                       Your browser does not support viewing PDFs. 
                       <a 
-                        href="/src/pages/BonusPdfs/The Loophole Bonus Content/How to be a Good Test Taker/How-to-Be-a-Good-Test-Taker.pdf" 
+                        href="/src/pages/BonusPdfs/The Loophole Bonus Content/How to be a Good Test Taker/How-to-Be-a-Good-Test-Taker-Demo-Cover-Page.pdf"
                         download
                         className="text-[#F48487] hover:underline ml-1"
                       >
@@ -46,7 +46,7 @@ const TestTaker = () => {
                 {/* Download Link */}
                 <div className="mt-8 text-center">
                   <a 
-                    href="/src/pages/BonusPdfs/The Loophole Bonus Content/How to be a Good Test Taker/How-to-Be-a-Good-Test-Taker.pdf" 
+                    href="/src/pages/BonusPdfs/The Loophole Bonus Content/How to be a Good Test Taker/How-to-Be-a-Good-Test-Taker-Demo-Cover-Page.pdf" 
                     download
                     className="inline-block bg-[#F48487] hover:bg-[#f37579] text-white font-neutra text-18px font-bold py-3 px-8 rounded-full transition-all duration-200"
                   >
