@@ -16,9 +16,12 @@ const TestTaker = () => {
       const { data: { user } } = await supabase.auth.getUser();
       setUser(user);
       
-      // If user is logged in, automatically access the PDF
+      // If user is logged in, automatically access the PDF after user state is set
       if (user && !pdfUrl && !loading) {
-        accessPDF();
+        // Use a small delay to ensure state is updated
+        setTimeout(() => {
+          accessPDF();
+        }, 500);
       }
     };
     
@@ -27,26 +30,25 @@ const TestTaker = () => {
     // Listen for auth changes
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
       setUser(session?.user ?? null);
-      
-      // If user just logged in, automatically access the PDF
-      if (session?.user && !pdfUrl && !loading) {
-        setTimeout(() => accessPDF(), 100); // Small delay to ensure state is updated
-      }
     });
 
     return () => subscription.unsubscribe();
   }, []);
 
   const accessPDF = async () => {
+    console.log('accessPDF called, user:', user, 'loading:', loading);
+    
     if (!user) {
+      console.log('No user found, showing auth required toast');
       toast({
-        title: "Authentication Required",
+        title: "Authentication Required", 
         description: "Please log in to access this content.",
         variant: "destructive",
       });
       return;
     }
 
+    console.log('Starting PDF access for user:', user.email);
     setLoading(true);
     try {
       const { data, error } = await supabase.functions.invoke('serve-pdf', {
