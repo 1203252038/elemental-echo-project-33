@@ -12,9 +12,14 @@ Deno.serve(async (req) => {
   }
 
   try {
+    console.log('Edge function called, method:', req.method);
+    
     // Get the authorization header
     const authHeader = req.headers.get('Authorization');
+    console.log('Auth header present:', !!authHeader);
+    
     if (!authHeader) {
+      console.log('No authorization header found');
       return new Response(
         JSON.stringify({ error: 'No authorization header' }),
         { 
@@ -27,6 +32,9 @@ Deno.serve(async (req) => {
     // Create Supabase client with service role for storage access
     const supabaseUrl = Deno.env.get('SUPABASE_URL')!;
     const supabaseKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
+    console.log('Supabase URL:', supabaseUrl);
+    console.log('Service role key present:', !!supabaseKey);
+    
     const supabase = createClient(supabaseUrl, supabaseKey, {
       auth: {
         autoRefreshToken: false,
@@ -36,11 +44,14 @@ Deno.serve(async (req) => {
 
     // Verify the JWT token
     const token = authHeader.replace('Bearer ', '');
+    console.log('Token present:', !!token);
+    
     const { data: user, error: authError } = await supabase.auth.getUser(token);
     
     if (authError || !user) {
+      console.error('Auth error:', authError);
       return new Response(
-        JSON.stringify({ error: 'Invalid authentication' }),
+        JSON.stringify({ error: 'Invalid authentication', details: authError?.message }),
         { 
           status: 401, 
           headers: { ...corsHeaders, 'Content-Type': 'application/json' } 
@@ -48,13 +59,16 @@ Deno.serve(async (req) => {
       );
     }
 
+    console.log('User authenticated:', user.user?.email);
+
     // Get the PDF filename from request body
     const body = await req.json();
     const filename = body?.filename;
     
     console.log('Requested filename:', filename);
-    
+
     if (!filename) {
+      console.log('No filename provided');
       return new Response(
         JSON.stringify({ error: 'No filename specified' }),
         { 
@@ -64,20 +78,19 @@ Deno.serve(async (req) => {
       );
     }
 
-    // Get the PDF from storage
-    console.log('Attempting to download PDF from storage...');
-    const { data: fileData, error: fileError } = await supabase
+    // Instead of downloading, let's create a signed URL for the file
+    console.log('Creating signed URL for file...');
+    const { data: signedUrlData, error: signedUrlError } = await supabase
       .storage
       .from('pdfs')
-      .download(filename);
+      .createSignedUrl(filename, 3600); // 1 hour expiry
 
-    if (fileError || !fileData) {
-      console.error('Error downloading PDF:', fileError);
-      console.error('File data:', fileData);
+    if (signedUrlError || !signedUrlData) {
+      console.error('Error creating signed URL:', signedUrlError);
       return new Response(
         JSON.stringify({ 
           error: 'PDF not found or access denied', 
-          details: fileError?.message,
+          details: signedUrlError?.message,
           filename: filename 
         }),
         { 
@@ -87,19 +100,13 @@ Deno.serve(async (req) => {
       );
     }
 
-    console.log('PDF downloaded successfully, converting to base64...');
-    // Convert blob to array buffer and then to base64
-    const arrayBuffer = await fileData.arrayBuffer();
-    const base64 = btoa(String.fromCharCode(...new Uint8Array(arrayBuffer)));
+    console.log('Signed URL created successfully');
     
-    console.log('PDF conversion successful, sending response...');
-
     return new Response(
       JSON.stringify({ 
         success: true,
         filename: filename,
-        contentType: 'application/pdf',
-        data: base64,
+        signedUrl: signedUrlData.signedUrl,
         user: user.user?.email 
       }),
       { 
