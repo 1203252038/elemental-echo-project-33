@@ -43,9 +43,9 @@ Deno.serve(async (req) => {
       );
     }
 
-    // Get the PDF filename from query params
-    const url = new URL(req.url);
-    const filename = url.searchParams.get('filename');
+    // Get the PDF filename from request body
+    const body = await req.json();
+    const filename = body?.filename;
     
     if (!filename) {
       return new Response(
