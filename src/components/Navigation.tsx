@@ -145,9 +145,14 @@ const Navigation = () => {
                                <Link to="/bonus/study-gear" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
                                  STUDY GEAR RECOMMENDATIONS
                                </Link>
-                               <Link to="/bonus/newsletter" className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300">
-                                 GET MORE LOOPHOLE IN YOUR INBOX
-                               </Link>
+                                <a 
+                                  href="https://lsatkarma.beehiiv.com/subscribe" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer" 
+                                  className="block px-4 py-2 font-neutra font-medium text-12px uppercase text-foreground hover:bg-gray-100 transition-colors duration-300"
+                                >
+                                  GET MORE LOOPHOLE IN YOUR INBOX
+                                </a>
                              </>
                            ) : (
                              <>
@@ -187,9 +192,14 @@ const Navigation = () => {
                   LOGIN / REGISTER
                 </Link>
               )}
-              <button className={getNavPillStyles('/newsletter')}>
+              <a 
+                href="https://lsatkarma.beehiiv.com/subscribe" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className={getNavPillStyles('/newsletter')}
+              >
                 JOIN OUR NEWSLETTER
-              </button>
+              </a>
             </div>
           </div>
           
