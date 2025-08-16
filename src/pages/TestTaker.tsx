@@ -40,7 +40,7 @@ const TestTaker = () => {
     setLoading(true);
     try {
       const { data, error } = await supabase.functions.invoke('serve-pdf', {
-        body: { filename: 'How-to-Be-a-Good-Test-Taker-Demo-Cover-Page.pdf' }
+        body: { filename: 'the loophole bonus content/how to be a good test taker/How-to-Be-a-Good-Test-Taker-Demo-Cover-Page.pdf' }
       });
 
       if (error) {
