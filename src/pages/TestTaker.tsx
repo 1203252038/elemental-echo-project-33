@@ -47,16 +47,22 @@ const TestTaker = () => {
         throw error;
       }
 
-      // For now, since we moved the PDF back to src and can't serve it directly,
-      // we'll show a success message and provide a download link
-      toast({
-        title: "Access Granted",
-        description: "You have access to this PDF content.",
-      });
-
-      // In a real implementation, you'd serve the PDF from Supabase Storage
-      // For now, we'll create a blob URL from a placeholder
-      setPdfUrl("placeholder");
+      if (data.success) {
+        // Convert base64 to blob and create object URL
+        const binaryString = atob(data.data);
+        const bytes = new Uint8Array(binaryString.length);
+        for (let i = 0; i < binaryString.length; i++) {
+          bytes[i] = binaryString.charCodeAt(i);
+        }
+        const blob = new Blob([bytes], { type: 'application/pdf' });
+        const url = URL.createObjectURL(blob);
+        setPdfUrl(url);
+        
+        toast({
+          title: "Access Granted",
+          description: "PDF loaded successfully!",
+        });
+      }
       
     } catch (error) {
       console.error('Error accessing PDF:', error);
@@ -94,24 +100,27 @@ const TestTaker = () => {
                   pdfUrl ? (
                     /* PDF Viewer for authenticated users */
                     <div className="bg-gray-50 rounded-lg p-4 shadow-inner">
-                      <div className="bg-white rounded p-8 text-center">
-                        <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                      <div className="mb-4 text-center">
+                        <h3 className="text-xl font-semibold text-gray-800 mb-2">
                           How to Be a Good Test Taker
                         </h3>
-                        <p className="text-gray-600 mb-6">
-                          Welcome {user.email}! You have access to this premium content.
+                        <p className="text-gray-600 text-sm">
+                          Welcome {user.email}! Viewing your premium content.
                         </p>
-                        <p className="text-sm text-gray-500 mb-4">
-                          PDF content would be displayed here. In a full implementation, this would be served from Supabase Storage.
-                        </p>
-                        <div className="space-y-4">
-                          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                            <p className="text-blue-800 font-medium">Content Preview Available</p>
-                            <p className="text-blue-600 text-sm mt-1">
-                              This is a demo of gated content access. The PDF would be displayed here.
-                            </p>
-                          </div>
-                        </div>
+                      </div>
+                      <iframe
+                        src={pdfUrl}
+                        className="w-full h-[600px] border-0 rounded"
+                        title="How to Be a Good Test Taker PDF"
+                      />
+                      <div className="mt-4 text-center">
+                        <a 
+                          href={pdfUrl}
+                          download="How-to-Be-a-Good-Test-Taker.pdf"
+                          className="inline-block bg-[#F48487] hover:bg-[#f37579] text-white font-neutra text-sm font-bold py-2 px-4 rounded transition-all duration-200"
+                        >
+                          Download PDF
+                        </a>
                       </div>
                     </div>
                   ) : (

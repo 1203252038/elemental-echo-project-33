@@ -57,26 +57,37 @@ Deno.serve(async (req) => {
       );
     }
 
-    // For now, we'll return a placeholder response since we can't directly read files from src
-    // In a real implementation, you'd store PDFs in Supabase Storage
-    if (filename === 'How-to-Be-a-Good-Test-Taker-Demo-Cover-Page.pdf') {
+    // Get the PDF from storage
+    const { data: fileData, error: fileError } = await supabase
+      .storage
+      .from('pdfs')
+      .download(filename);
+
+    if (fileError || !fileData) {
+      console.error('Error downloading PDF:', fileError);
       return new Response(
-        JSON.stringify({ 
-          message: 'PDF access granted',
-          downloadUrl: `/api/pdf-download?filename=${filename}`,
-          user: user.user?.email 
-        }),
+        JSON.stringify({ error: 'PDF not found or access denied' }),
         { 
-          status: 200, 
+          status: 404, 
           headers: { ...corsHeaders, 'Content-Type': 'application/json' } 
         }
       );
     }
 
+    // Convert blob to array buffer and then to base64
+    const arrayBuffer = await fileData.arrayBuffer();
+    const base64 = btoa(String.fromCharCode(...new Uint8Array(arrayBuffer)));
+
     return new Response(
-      JSON.stringify({ error: 'PDF not found' }),
+      JSON.stringify({ 
+        success: true,
+        filename: filename,
+        contentType: 'application/pdf',
+        data: base64,
+        user: user.user?.email 
+      }),
       { 
-        status: 404, 
+        status: 200, 
         headers: { ...corsHeaders, 'Content-Type': 'application/json' } 
       }
     );
