@@ -47,6 +47,8 @@ Deno.serve(async (req) => {
     const body = await req.json();
     const filename = body?.filename;
     
+    console.log('Requested filename:', filename);
+    
     if (!filename) {
       return new Response(
         JSON.stringify({ error: 'No filename specified' }),
@@ -58,6 +60,7 @@ Deno.serve(async (req) => {
     }
 
     // Get the PDF from storage
+    console.log('Attempting to download PDF from storage...');
     const { data: fileData, error: fileError } = await supabase
       .storage
       .from('pdfs')
@@ -65,8 +68,13 @@ Deno.serve(async (req) => {
 
     if (fileError || !fileData) {
       console.error('Error downloading PDF:', fileError);
+      console.error('File data:', fileData);
       return new Response(
-        JSON.stringify({ error: 'PDF not found or access denied' }),
+        JSON.stringify({ 
+          error: 'PDF not found or access denied', 
+          details: fileError?.message,
+          filename: filename 
+        }),
         { 
           status: 404, 
           headers: { ...corsHeaders, 'Content-Type': 'application/json' } 
@@ -74,9 +82,12 @@ Deno.serve(async (req) => {
       );
     }
 
+    console.log('PDF downloaded successfully, converting to base64...');
     // Convert blob to array buffer and then to base64
     const arrayBuffer = await fileData.arrayBuffer();
     const base64 = btoa(String.fromCharCode(...new Uint8Array(arrayBuffer)));
+    
+    console.log('PDF conversion successful, sending response...');
 
     return new Response(
       JSON.stringify({ 
