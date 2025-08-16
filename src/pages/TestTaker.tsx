@@ -44,6 +44,7 @@ const TestTaker = () => {
       });
 
       if (error) {
+        console.error('Edge function error:', error);
         throw error;
       }
 
@@ -66,9 +67,10 @@ const TestTaker = () => {
       
     } catch (error) {
       console.error('Error accessing PDF:', error);
+      console.error('Error details:', JSON.stringify(error, null, 2));
       toast({
         title: "Access Error",
-        description: "Unable to access the PDF. Please try again.",
+        description: `Unable to access the PDF: ${error.message || 'Unknown error'}`,
         variant: "destructive",
       });
     } finally {
