@@ -28,10 +28,10 @@ const StudyGearRecommendations = () => {
                 <div className="prose prose-lg max-w-none text-gray-700">
                   
                   <div className="mb-8 text-center">
-                    <img 
-                      src="/lovable-uploads/6f12c74b-b3c9-48f9-808e-44447c6ef77d.png" 
-                      alt="Ellen's pencil collection showing various Blackwing pencils, erasers, and study materials" 
-                      className="w-full max-w-2xl mx-auto rounded-lg shadow-lg"
+                    <img
+                      src="/lovable-uploads/6f12c74b-b3c9-48f9-808e-44447c6ef77d.png"
+                      alt="Ellen's pencil collection showing various Blackwing pencils, erasers, and study materials"
+                      className="mx-auto w-full max-w-md rounded-lg shadow-lg"
                     />
                   </div>
                   
