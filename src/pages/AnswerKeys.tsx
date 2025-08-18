@@ -13,25 +13,25 @@ const AnswerKeys = () => {
     {
       id: 1,
       title: "Basic Translation Drill Answer Key - June 2007 Section 2",
-      coverImage: "/answer-keys-covers/basic-translation-section-2.png",
+      coverImage: "/lovable-uploads/12c4ff73-2de4-471a-bc49-bd29904b445b.png",
       pdfPath: "The Loophole Bonus Content/Answer Keys/Basic-Translation-Drill-Answer-Key-June-2007-Section-2.pdf"
     },
     {
       id: 2,
       title: "Basic Translation Drill Answer Key - June 2007 Section 3",
-      coverImage: "/answer-keys-covers/basic-translation-section-3.png",
+      coverImage: "/lovable-uploads/9602d9fc-95ed-4cdd-96e3-02ac1af649e5.png",
       pdfPath: "The Loophole Bonus Content/Answer Keys/Basic-Translation-Drill-Answer-Key-June-2007-Section-3.pdf"
     },
     {
       id: 3,
       title: "CLIR Drill Answer Key - June 2007 Section 2",
-      coverImage: "/answer-keys-covers/clir-drill-section-2.png",
+      coverImage: "/lovable-uploads/f6d5a635-4ff8-4ca8-8a8d-8a7417f10bd1.png",
       pdfPath: "The Loophole Bonus Content/Answer Keys/CLIR-Drill-Answer-Key-June-2007-Section-2.pdf"
     },
     {
       id: 4,
       title: "CLIR Drill Answer Key - June 2007 Section 3",
-      coverImage: "/answer-keys-covers/clir-drill-section-3.png",
+      coverImage: "/lovable-uploads/bad050bb-488d-4288-87ba-e530fda62c9d.png",
       pdfPath: "The Loophole Bonus Content/Answer Keys/CLIR-Drill-Answer-Key-June-2007-Section-3.pdf"
     }
   ];
