@@ -7,6 +7,7 @@ import { useToast } from "@/hooks/use-toast";
 const AnswerKeys = () => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [coverImages, setCoverImages] = useState<Record<string, string>>({});
   const { toast } = useToast();
 
   const answerKeys = [
@@ -51,6 +52,37 @@ const AnswerKeys = () => {
     });
 
     return () => subscription.unsubscribe();
+  }, []);
+
+  // Load cover images
+  useEffect(() => {
+    const loadCoverImages = async () => {
+      const imagePromises = answerKeys.map(async (answerKey) => {
+        try {
+          const { data, error } = await supabase.functions.invoke('serve-image', {
+            body: { filename: answerKey.coverPath }
+          });
+
+          if (data?.success) {
+            return { id: answerKey.id, url: data.signedUrl };
+          }
+        } catch (error) {
+          console.error(`Error loading cover for ${answerKey.title}:`, error);
+        }
+        return { id: answerKey.id, url: null };
+      });
+
+      const results = await Promise.all(imagePromises);
+      const imageMap: Record<string, string> = {};
+      results.forEach(result => {
+        if (result.url) {
+          imageMap[result.id] = result.url;
+        }
+      });
+      setCoverImages(imageMap);
+    };
+
+    loadCoverImages();
   }, []);
 
   const openPDF = async (pdfPath: string, title: string) => {
@@ -125,13 +157,23 @@ const AnswerKeys = () => {
                         className="bg-gray-50 rounded-lg p-4 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105"
                         onClick={() => openPDF(answerKey.pdfPath, answerKey.title)}
                       >
-                        <div className="aspect-[3/4] bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
-                          <div className="text-gray-500 text-center p-4">
-                            <h3 className="text-sm font-semibold mb-2">
-                              {answerKey.title}
-                            </h3>
-                            <p className="text-xs">Click to open PDF</p>
-                          </div>
+                        <div className="aspect-[3/4] bg-gray-200 rounded-lg mb-4 overflow-hidden">
+                          {coverImages[answerKey.id] ? (
+                            <img
+                              src={coverImages[answerKey.id]}
+                              alt={`${answerKey.title} Cover`}
+                              className="w-full h-full object-cover"
+                            />
+                          ) : (
+                            <div className="w-full h-full flex items-center justify-center text-gray-500">
+                              <div className="text-center p-4">
+                                <h3 className="text-sm font-semibold mb-2">
+                                  {answerKey.title}
+                                </h3>
+                                <p className="text-xs">Loading cover...</p>
+                              </div>
+                            </div>
+                          )}
                         </div>
                         <h4 className="text-sm font-semibold text-gray-800 text-center line-clamp-2">
                           {answerKey.title}
