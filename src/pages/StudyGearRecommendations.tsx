@@ -130,9 +130,9 @@ const StudyGearRecommendations = () => {
         </div>
 
         {/* Grey Footer Section */}
-        <div className="bg-gray-100">
-          <Footer />
-        </div>
+       <div className="bg-[#323437]">
+              <Footer />
+       </div>
       </div>
     </div>
   );
