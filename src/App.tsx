@@ -27,6 +27,7 @@ import NotFound from "./pages/NotFound";
 import BonusContent from "./pages/BonusContent";
 import TestTaker from "./pages/TestTaker";
 import StudyGearRecommendations from "./pages/StudyGearRecommendations";
+import AnswerKeys from "./pages/AnswerKeys";
 
 const queryClient = new QueryClient();
 
@@ -58,7 +59,7 @@ const App = () => (
           <Route path="/auth" element={<Auth />} />
           <Route path="/bonus/test-taker" element={<TestTaker />} />
           <Route path="/bonus/challenge-questions" element={<BonusContent title="Challenge Question Explanations" />} />
-          <Route path="/bonus/answer-keys" element={<BonusContent title="Answer Keys" />} />
+          <Route path="/bonus/answer-keys" element={<AnswerKeys />} />
           <Route path="/bonus/deleted-scenes" element={<BonusContent title="Deleted Scenes" />} />
           <Route path="/bonus/study-gear" element={<StudyGearRecommendations />} />
           <Route path="/bonus/newsletter" element={<BonusContent title="Get More Loophole in Your Inbox" />} />
