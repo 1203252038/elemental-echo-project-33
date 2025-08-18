@@ -7,32 +7,31 @@ import { useToast } from "@/hooks/use-toast";
 const AnswerKeys = () => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [coverImages, setCoverImages] = useState<Record<string, string>>({});
   const { toast } = useToast();
 
   const answerKeys = [
     {
       id: 1,
       title: "Basic Translation Drill Answer Key - June 2007 Section 2",
-      coverPath: "The Loophole Bonus Content/Answer Keys/Answer Keys Covers/Basic-Translation-Drill-Answer-Key-June-2007-Section-2-Cover.png",
+      coverImage: "/answer-keys-covers/basic-translation-section-2.png",
       pdfPath: "The Loophole Bonus Content/Answer Keys/Basic-Translation-Drill-Answer-Key-June-2007-Section-2.pdf"
     },
     {
       id: 2,
       title: "Basic Translation Drill Answer Key - June 2007 Section 3",
-      coverPath: "The Loophole Bonus Content/Answer Keys/Answer Keys Covers/Basic-Translation-Drill-Answer-Key-June-2007-Section-3-Cover.png",
+      coverImage: "/answer-keys-covers/basic-translation-section-3.png",
       pdfPath: "The Loophole Bonus Content/Answer Keys/Basic-Translation-Drill-Answer-Key-June-2007-Section-3.pdf"
     },
     {
       id: 3,
       title: "CLIR Drill Answer Key - June 2007 Section 2",
-      coverPath: "The Loophole Bonus Content/Answer Keys/Answer Keys Covers/CLIR-Drill-Answer-Key-June-2007-Section-2-Cover.png",
+      coverImage: "/answer-keys-covers/clir-drill-section-2.png",
       pdfPath: "The Loophole Bonus Content/Answer Keys/CLIR-Drill-Answer-Key-June-2007-Section-2.pdf"
     },
     {
       id: 4,
       title: "CLIR Drill Answer Key - June 2007 Section 3",
-      coverPath: "The Loophole Bonus Content/Answer Keys/Answer Keys Covers/CLIR-Drill-Answer-Key-June-2007-Section-3-Cover.png",
+      coverImage: "/answer-keys-covers/clir-drill-section-3.png",
       pdfPath: "The Loophole Bonus Content/Answer Keys/CLIR-Drill-Answer-Key-June-2007-Section-3.pdf"
     }
   ];
@@ -54,36 +53,6 @@ const AnswerKeys = () => {
     return () => subscription.unsubscribe();
   }, []);
 
-  // Load cover images
-  useEffect(() => {
-    const loadCoverImages = async () => {
-      const imagePromises = answerKeys.map(async (answerKey) => {
-        try {
-          const { data, error } = await supabase.functions.invoke('serve-image', {
-            body: { filename: answerKey.coverPath }
-          });
-
-          if (data?.success) {
-            return { id: answerKey.id, url: data.signedUrl };
-          }
-        } catch (error) {
-          console.error(`Error loading cover for ${answerKey.title}:`, error);
-        }
-        return { id: answerKey.id, url: null };
-      });
-
-      const results = await Promise.all(imagePromises);
-      const imageMap: Record<string, string> = {};
-      results.forEach(result => {
-        if (result.url) {
-          imageMap[result.id] = result.url;
-        }
-      });
-      setCoverImages(imageMap);
-    };
-
-    loadCoverImages();
-  }, []);
 
   const openPDF = async (pdfPath: string, title: string) => {
     if (!user) {
@@ -158,22 +127,11 @@ const AnswerKeys = () => {
                         onClick={() => openPDF(answerKey.pdfPath, answerKey.title)}
                       >
                         <div className="aspect-[3/4] bg-gray-200 rounded-lg mb-4 overflow-hidden">
-                          {coverImages[answerKey.id] ? (
-                            <img
-                              src={coverImages[answerKey.id]}
-                              alt={`${answerKey.title} Cover`}
-                              className="w-full h-full object-cover"
-                            />
-                          ) : (
-                            <div className="w-full h-full flex items-center justify-center text-gray-500">
-                              <div className="text-center p-4">
-                                <h3 className="text-sm font-semibold mb-2">
-                                  {answerKey.title}
-                                </h3>
-                                <p className="text-xs">Loading cover...</p>
-                              </div>
-                            </div>
-                          )}
+                          <img
+                            src={answerKey.coverImage}
+                            alt={`${answerKey.title} Cover`}
+                            className="w-full h-full object-cover"
+                          />
                         </div>
                         <h4 className="text-sm font-semibold text-gray-800 text-center line-clamp-2">
                           {answerKey.title}
