@@ -13,37 +13,44 @@ const DeletedScenes = () => {
     {
       id: 1,
       title: "2-Fast-2-Question-Stem-Quiz",
-      pdfPath: "The Loophole Bonus Content/Deleted Scenes/2-Fast-2-Question-Stem-Quiz.pdf"
+      pdfPath: "The Loophole Bonus Content/Deleted Scenes/2-Fast-2-Question-Stem-Quiz.pdf",
+      coverImage: "/lovable-uploads/19585b8c-d979-4f87-90ac-9fb5d807bb82.png"
     },
     {
       id: 2,
       title: "Equivocation Drill",
-      pdfPath: "The Loophole Bonus Content/Deleted Scenes/Equivocation-Drill.pdf"
+      pdfPath: "The Loophole Bonus Content/Deleted Scenes/Equivocation-Drill.pdf",
+      coverImage: "/lovable-uploads/15aae50b-47eb-4e9e-9341-644b0951e899.png"
     },
     {
       id: 3,
       title: "Meet the LSAT FAQ",
-      pdfPath: "The Loophole Bonus Content/Deleted Scenes/Meet-the-LSAT-FAQ.pdf"
+      pdfPath: "The Loophole Bonus Content/Deleted Scenes/Meet-the-LSAT-FAQ.pdf",
+      coverImage: "/lovable-uploads/276e412d-ff4e-462b-aba2-8e4658fb0f78.png"
     },
     {
       id: 4,
       title: "Strengthen vs. MSS Deep Dive",
-      pdfPath: "The Loophole Bonus Content/Deleted Scenes/Strengthen-vs.-MSS-Deep-Dive.pdf"
+      pdfPath: "The Loophole Bonus Content/Deleted Scenes/Strengthen-vs.-MSS-Deep-Dive.pdf",
+      coverImage: "/lovable-uploads/40cc4966-a724-43bf-976d-2c42a6005e4e.png"
     },
     {
       id: 5,
       title: "Strengthen vs. SA Deep Dive",
-      pdfPath: "The Loophole Bonus Content/Deleted Scenes/Strengthen-vs.-SA-Deep-Dive.pdf"
+      pdfPath: "The Loophole Bonus Content/Deleted Scenes/Strengthen-vs.-SA-Deep-Dive.pdf",
+      coverImage: "/lovable-uploads/f240af7d-5dd5-4fd9-be74-0bc51efdf4f9.png"
     },
     {
       id: 6,
       title: "The Uncut Method Vocab List",
-      pdfPath: "The Loophole Bonus Content/Deleted Scenes/The-Uncut-Method-Vocab-List.pdf"
+      pdfPath: "The Loophole Bonus Content/Deleted Scenes/The-Uncut-Method-Vocab-List.pdf",
+      coverImage: "/lovable-uploads/015fd6e1-de30-4a50-8c21-d52ac43a97f2.png"
     },
     {
       id: 7,
       title: "The Unless Practice Routine",
-      pdfPath: "The Loophole Bonus Content/Deleted Scenes/The-Unless-Practice-Routine.pdf"
+      pdfPath: "The Loophole Bonus Content/Deleted Scenes/The-Unless-Practice-Routine.pdf",
+      coverImage: "/lovable-uploads/300b05cc-eadb-427f-857a-e3f83b7ad2c3.png"
     }
   ];
 
@@ -136,15 +143,12 @@ const DeletedScenes = () => {
                         className="bg-gray-50 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105"
                         onClick={() => openPDF(scene.pdfPath, scene.title)}
                       >
-                        <div className="aspect-[3/4] bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg mb-4 flex items-center justify-center">
-                          <div className="text-center p-4">
-                            <div className="w-12 h-12 mx-auto mb-2 bg-[#F48487] rounded-full flex items-center justify-center">
-                              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                              </svg>
-                            </div>
-                            <p className="text-xs text-gray-600 font-medium">PDF Document</p>
-                          </div>
+                        <div className="aspect-square rounded-lg mb-4 overflow-hidden">
+                          <img 
+                            src={scene.coverImage} 
+                            alt={scene.title}
+                            className="w-full h-full object-cover"
+                          />
                         </div>
                         <h4 className="text-sm font-semibold text-gray-800 text-center line-clamp-2">
                           {scene.title}
