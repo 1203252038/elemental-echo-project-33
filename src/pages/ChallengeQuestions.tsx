@@ -13,97 +13,116 @@ const ChallengeQuestions = () => {
     {
       id: 1,
       title: "Argument Part Challenge Question",
-      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Argument-Part-Challenge-Question-Explanation.pdf"
+      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Argument-Part-Challenge-Question-Explanation.pdf",
+      coverImage: "/lovable-uploads/Challenge_uploads/Argument-Part-Challenge.png"
     },
     {
       id: 2,
       title: "Classic Flaw Challenge Question",
-      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Classic-Flaw-Challenge-Question-Explanation.pdf"
+      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Classic-Flaw-Challenge-Question-Explanation.pdf",
+      coverImage: "/lovable-uploads/Challenge_uploads/Classic-Flaw-Challenge.png"
     },
     {
       id: 3,
       title: "Conclusion Challenge Question",
-      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Conclusion-Challenge-Question-Explanation.pdf"
+      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Conclusion-Challenge-Question-Explanation.pdf",
+      coverImage: "/lovable-uploads/Challenge_uploads/Conclusion-Challenge.png"
     },
     {
       id: 4,
       title: "Contradiction Challenge Question",
-      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Contradiction-Challenge-Question-Explanation.pdf"
+      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Contradiction-Challenge-Question-Explanation.pdf",
+      coverImage: "/lovable-uploads/Challenge_uploads/Contradiction-Challenge-768x994.png"
     },
     {
       id: 5,
       title: "Controversy Challenge Question",
-      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Controversy-Challenge-Question-Explanation.pdf"
+      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Controversy-Challenge-Question-Explanation.pdf",
+      coverImage: "/lovable-uploads/Challenge_uploads/Controversy-Challenge-768x994.png"
     },
     {
       id: 6,
       title: "Counter Challenge Question",
-      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Counter-Challenge-Question-Explanation.pdf"
+      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Counter-Challenge-Question-Explanation.pdf",
+      coverImage: "/lovable-uploads/Challenge_uploads/Counter-Challenge-768x994.png"
     },
     {
       id: 7,
       title: "Evaluate Challenge Question",
-      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Evaluate-Challenge-Question-Explanation.pdf"
+      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Evaluate-Challenge-Question-Explanation.pdf",
+      coverImage: "/lovable-uploads/Challenge_uploads/Evaluate-Challenge-768x994.png"
     },
     {
       id: 8,
       title: "Inference Challenge Question",
-      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Inference-Challenge-Question-Explanations.pdf"
+      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Inference-Challenge-Question-Explanations.pdf",
+      coverImage: "/lovable-uploads/Challenge_uploads/Inference-Challenge-768x994.png"
     },
     {
       id: 9,
       title: "Loophole Flaw Challenge Question",
-      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Loophole-Flaw-Challenge-Question-Explanation.pdf"
+      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Loophole-Flaw-Challenge-Question-Explanation.pdf",
+      coverImage: "/lovable-uploads/Challenge_uploads/Loophole-Flaw-Challenge-768x994.png"
     },
     {
       id: 10,
       title: "MSS Challenge Question",
-      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/MSS-Challenge-Question-Explanations.pdf"
+      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/MSS-Challenge-Question-Explanations.pdf",
+      coverImage: "/lovable-uploads/Challenge_uploads/MSS-Challenge-768x994.png"
     },
     {
       id: 11,
       title: "Method Challenge Question",
-      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Method-Challenge-Question-Explanation.pdf"
+      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Method-Challenge-Question-Explanation.pdf",
+      coverImage: "/lovable-uploads/Challenge_uploads/Method-Challenge-768x994.png"
     },
     {
       id: 12,
       title: "Necessary Assumption Challenge Question",
-      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Necessary-Assumption-Challenge-Question-Explanations.pdf"
+      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Necessary-Assumption-Challenge-Question-Explanations.pdf",
+      coverImage: "/lovable-uploads/Challenge_uploads/Necessary-Assumption-Challenge-768x994.png"
     },
     {
       id: 13,
       title: "Parallel Flaw Challenge Question",
-      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Parallel-Flaw-Challenge-Question-Explanation.pdf"
+      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Parallel-Flaw-Challenge-Question-Explanation.pdf",
+      coverImage: "/lovable-uploads/Challenge_uploads/Parallel-Flaw-Challenge-768x994.png"
     },
     {
       id: 14,
       title: "Parallel Reasoning Challenge Question",
-      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Parallel-Reasoning-Challenge-Question-Explanations.pdf"
+      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Parallel-Reasoning-Challenge-Question-Explanations.pdf",
+      coverImage: "/lovable-uploads/Challenge_uploads/Parallel-Reasoning-Challenge-768x994.png"
     },
     {
       id: 15,
       title: "Principle Conform Challenge Question",
-      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Principle-Conform-Challenge-Question-Explanation.pdf"
+      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Principle-Conform-Challenge-Question-Explanation.pdf",
+      coverImage: "/lovable-uploads/Challenge_uploads/Principle-Conform-Challenge-768x994.png"
     },
     {
       id: 16,
       title: "Resolution Challenge Question",
-      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Resolution-Challenge-Question-Explanation.pdf"
+      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Resolution-Challenge-Question-Explanation.pdf",
+      coverImage: "/lovable-uploads/Challenge_uploads/Resolution-Challenge-768x994.png"
     },
     {
       id: 17,
       title: "Strengthen Challenge Question",
-      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Strengthen-Challenge-Question-Explanations.pdf"
+      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Strengthen-Challenge-Question-Explanations.pdf",
+      coverImage: "/lovable-uploads/Challenge_uploads/Strengthen-Challenge-768x994.png"
     },
     {
       id: 18,
       title: "Sufficient Assumption Challenge Question",
-      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Sufficient-Assumption-Challenge-Question-Explanation.pdf"
+      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Sufficient-Assumption-Challenge-Question-Explanation.pdf",
+      coverImage: "/lovable-uploads/Challenge_uploads/Sufficient-Assumption-Challenge-768x994.png"
     },
     {
       id: 19,
       title: "Weaken Challenge Question",
-      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Weaken-Challenge-Question-Explanations.pdf"
+      pdfPath: "The Loophole Bonus Content/Challenge Question Explanations/Weaken-Challenge-Question-Explanations.pdf",
+      coverImage: "/lovable-uploads/Challenge_uploads/Weaken-Challenge-768x994.png"
     }
   ];
 
@@ -196,15 +215,12 @@ const ChallengeQuestions = () => {
                         className="bg-gray-50 rounded-lg p-3 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105"
                         onClick={() => openPDF(question.pdfPath, question.title)}
                       >
-                        <div className="aspect-[3/4] bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg mb-3 flex items-center justify-center">
-                          <div className="text-center p-2">
-                            <div className="w-8 h-8 mx-auto mb-1 bg-[#F48487] rounded-full flex items-center justify-center">
-                              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                              </svg>
-                            </div>
-                            <p className="text-xs text-gray-600 font-medium">PDF</p>
-                          </div>
+                        <div className="aspect-[3/4] rounded-lg mb-3 overflow-hidden">
+                          <img 
+                            src={question.coverImage} 
+                            alt={question.title}
+                            className="w-full h-full object-cover"
+                          />
                         </div>
                         <h4 className="text-xs font-semibold text-gray-800 text-center line-clamp-3 leading-tight">
                           {question.title}
