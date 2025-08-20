@@ -69,9 +69,10 @@ const Auth = () => {
       });
     } else {
       toast({
-        title: 'Account created!',
-        description: 'Please check your email to verify your account.',
+        title: 'Account created successfully!',
+        description: 'You are now logged in and can access all content.',
       });
+      navigate('/');
     }
 
     setIsLoading(false);
@@ -130,7 +131,7 @@ const Auth = () => {
                 <CardHeader>
                   <CardTitle>Create Account</CardTitle>
                   <CardDescription>
-                    Create an account to access exclusive bonus content
+                    Create an account to instantly access exclusive bonus content
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
