@@ -191,9 +191,9 @@ const ChallengeQuestions = () => {
       <Navigation />
       
       {/* Hero Section with teal background */}
-      <section className="bg-[#77b8b1] text-white py-20 pt-36 relative">
+      <section className="bg-[#77b8b1] text-white py-12 sm:py-16 lg:py-20 pt-24 sm:pt-28 lg:pt-36 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-neutra font-bold text-7xl">
+          <h1 className="font-neutra font-bold text-3xl sm:text-5xl lg:text-7xl">
             Challenge Question Explanations
           </h1>
         </div>
@@ -202,13 +202,13 @@ const ChallengeQuestions = () => {
       {/* Navy background starts here */}
       <div className="bg-[#2d3c6f]">
         {/* Main Card Container - White with overlap and side shadows */}
-        <div className="relative -mt-12 mx-4 sm:mx-8 lg:mx-12">
+        <div className="relative -mt-8 sm:-mt-12 mx-2 sm:mx-4 lg:mx-12">
           <div className="bg-white rounded-t-lg shadow-2xl">
             {/* Main Content Section */}
-            <section className="py-16 px-8 lg:px-16">
+            <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-8 lg:px-16">
               <div className="max-w-6xl mx-auto">
                 {user ? (
-                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4">
                     {challengeQuestions.map((question) => (
                       <div
                         key={question.id}

@@ -124,5 +124,22 @@
     @apply bg-background text-foreground;
     /* Ensuring Neutra is the primary font with proper fallbacks */
     font-family: 'Neutra', 'Josefin Sans', sans-serif;
+    /* Improve text rendering on mobile */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Mobile optimizations */
+  @media (max-width: 768px) {
+    html {
+      /* Prevent zoom on input focus */
+      font-size: 16px;
+    }
+    
+    /* Improve touch targets */
+    button, a {
+      min-height: 44px;
+      min-width: 44px;
+    }
   }
 }

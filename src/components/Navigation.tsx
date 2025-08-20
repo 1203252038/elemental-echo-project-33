@@ -223,11 +223,71 @@ const Navigation = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
-            <Link to="/" className="font-neutra font-medium text-12px uppercase block px-3 py-2 text-foreground hover:text-peach">HOME</Link>
-            <Link to="/about-elemental" className="font-neutra font-medium text-12px uppercase block px-3 py-2 text-foreground hover:text-peach">TEAM ELEMENTAL</Link>
-            <Link to="/student-stories" className="font-neutra font-medium text-12px uppercase block px-3 py-2 text-foreground hover:text-peach">STUDENT STORIES</Link>
+        <div className="md:hidden absolute top-full left-0 right-0 z-50 bg-white border-t border-gray-200 shadow-lg">
+          <div className="px-4 py-6 space-y-4 max-h-screen overflow-y-auto">
+            <Link 
+              to="/" 
+              onClick={() => setIsOpen(false)}
+              className="font-neutra font-medium text-sm uppercase block py-3 text-foreground hover:text-peach transition-colors border-b border-gray-100"
+            >
+              HOME
+            </Link>
+            <Link 
+              to="/about-elemental" 
+              onClick={() => setIsOpen(false)}
+              className="font-neutra font-medium text-sm uppercase block py-3 text-foreground hover:text-peach transition-colors border-b border-gray-100"
+            >
+              TEAM ELEMENTAL
+            </Link>
+            <Link 
+              to="/student-stories" 
+              onClick={() => setIsOpen(false)}
+              className="font-neutra font-medium text-sm uppercase block py-3 text-foreground hover:text-peach transition-colors border-b border-gray-100"
+            >
+              STUDENT STORIES
+            </Link>
+            <Link 
+              to="/the-loophole-in-lsat-logical-reasoning" 
+              onClick={() => setIsOpen(false)}
+              className="font-neutra font-medium text-sm uppercase block py-3 text-foreground hover:text-peach transition-colors border-b border-gray-100"
+            >
+              THE LOOPHOLE
+            </Link>
+            <Link 
+              to="/tutoring" 
+              onClick={() => setIsOpen(false)}
+              className="font-neutra font-medium text-sm uppercase block py-3 text-foreground hover:text-peach transition-colors border-b border-gray-100"
+            >
+              TUTORING
+            </Link>
+            {user ? (
+              <button 
+                onClick={() => {
+                  signOut();
+                  setIsOpen(false);
+                }}
+                className="font-neutra font-medium text-sm uppercase block py-3 text-foreground hover:text-peach transition-colors border-b border-gray-100 w-full text-left"
+              >
+                LOGOUT
+              </button>
+            ) : (
+              <Link 
+                to="/auth" 
+                onClick={() => setIsOpen(false)}
+                className="font-neutra font-medium text-sm uppercase block py-3 text-foreground hover:text-peach transition-colors border-b border-gray-100"
+              >
+                LOGIN
+              </Link>
+            )}
+            <a 
+              href="https://lsatkarma.beehiiv.com/subscribe" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              onClick={() => setIsOpen(false)}
+              className="font-neutra font-medium text-sm uppercase block py-3 text-foreground hover:text-peach transition-colors"
+            >
+              JOIN OUR NEWSLETTER
+            </a>
           </div>
         </div>
       )}
