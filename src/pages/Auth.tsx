@@ -57,9 +57,9 @@ const Auth = () => {
     const formData = new FormData(e.currentTarget);
     const email = formData.get('signup-email') as string;
     const password = formData.get('signup-password') as string;
-    const username = formData.get('signup-username') as string;
+    const displayName = formData.get('signup-display-name') as string;
 
-    const { error } = await signUp(email, password, username);
+    const { error } = await signUp(email, password, displayName);
 
     if (error) {
       toast({
@@ -136,12 +136,12 @@ const Auth = () => {
                 <CardContent>
                   <form onSubmit={handleSignUp} className="space-y-4">
                     <div className="space-y-2">
-                      <Label htmlFor="signup-username">Username</Label>
+                      <Label htmlFor="signup-display-name">Display Name</Label>
                       <Input
-                        id="signup-username"
-                        name="signup-username"
+                        id="signup-display-name"
+                        name="signup-display-name"
                         type="text"
-                        placeholder="Your username"
+                        placeholder="Your display name"
                         required
                       />
                     </div>

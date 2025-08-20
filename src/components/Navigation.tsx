@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
+import { useProfile } from "@/hooks/useProfile";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
   const { user, signOut } = useAuth();
+  const { profile } = useProfile();
 
   const isHomePage = location.pathname === '/';
 
@@ -173,7 +175,7 @@ const Navigation = () => {
               {user ? (
                 <div className="relative group">
                   <button className={getNavPillStyles('', true)}>
-                    {user.email?.split('@')[0]?.toUpperCase()}
+                    {profile?.username || user?.email?.split('@')[0]?.toUpperCase() || 'USER'}
                     <span className="ml-1 inline-block w-0 h-0 border-l-[3px] border-r-[3px] border-t-[4px] border-l-transparent border-r-transparent border-t-current"></span>
                   </button>
                   <div className="absolute top-full right-0 mt-1 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 bg-white border border-gray-200 shadow-lg z-50">

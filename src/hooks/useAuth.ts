@@ -27,7 +27,7 @@ export const useAuth = () => {
     return () => subscription.unsubscribe();
   }, []);
 
-  const signUp = async (email: string, password: string, username: string) => {
+  const signUp = async (email: string, password: string, displayName: string) => {
     const redirectUrl = `${window.location.origin}/`;
     
     const { error } = await supabase.auth.signUp({
@@ -36,18 +36,10 @@ export const useAuth = () => {
       options: {
         emailRedirectTo: redirectUrl,
         data: {
-          username
+          display_name: displayName
         }
       }
     });
-    
-    if (!error && session?.user) {
-      // Update profile with username
-      await supabase
-        .from('profiles')
-        .update({ username })
-        .eq('user_id', session.user.id);
-    }
     
     return { error };
   };
